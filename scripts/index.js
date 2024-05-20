@@ -1,15 +1,3 @@
-// Header scroll animation
-const logoText = document.getElementById('header__logoText');
-const burgerMenuText = document.getElementById('item--burgerMenuText');
-
-window.addEventListener('scroll', () => {
-    if (document.documentElement.scrollTop > 40) {
-        burgerMenuText.style.display = 'none';
-    } else {
-        burgerMenuText.style.display = '';
-    }
-})
-
 // Burger menu open/close buttons
 const burgerMenu = document.getElementById('burgerMenu');
 const openBurgerButton = document.getElementById('item--burgerMenu');
@@ -23,18 +11,8 @@ closeBurgerButton.addEventListener('click', () => {
     burgerMenu.style.left = '-101vw';
 })
 
-// Menu horizontal scroll by default
-let elems = document.getElementsByClassName('list--levelTwo');
-
-for (let elem of elems) {
-    elem.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        elem.scrollLeft += e.deltaY;
-    })
-}
-
 // Burger menu list script
-const levelOne_items = document.getElementsByClassName('list--levelOne')[0].children;
+const levelOne_items = document.getElementsByClassName('itemsContainer__item');
 const levelTwo_items = document.getElementsByClassName('list--levelTwo');
 
 for (let i = 0; i < levelOne_items.length; i++) {
@@ -52,3 +30,25 @@ for (let i = 0; i < levelOne_items.length; i++) {
     })
     console.log(levelOne_items[i])
 }
+
+// Burger menu horizontal scroll by default
+let elems = document.getElementsByClassName('list--levelTwo');
+
+for (let elem of elems) {
+    elem.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        elem.scrollLeft += e.deltaY;
+    })
+}
+
+// Header scroll animation
+const logoText = document.getElementById('header__logoText');
+const burgerMenuText = document.getElementById('item--burgerMenuText');
+
+window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop > 40) {
+        burgerMenuText.style.display = 'none';
+    } else {
+        burgerMenuText.style.display = '';
+    }
+})

@@ -182,7 +182,6 @@ body {
     font-size: 24px;
     line-height: 30px;
     border-radius: 4px;
-    transition: all 300ms;
 }
 
 .item--search input::placeholder {
@@ -201,7 +200,6 @@ body {
     position: absolute;
     cursor: pointer;
     fill: #FFFFFF;
-    transition: fill 400ms;
 }
 
 .item--search input:focus+label {
@@ -440,6 +438,7 @@ body {
 }
 
 .list--levelOne {
+    margin: 0 120px 0 0;
     max-height: 650px;
     max-width: 340px;
     gap: 40px;
@@ -454,18 +453,18 @@ body {
 }
 
 .list--levelTwo {
+    width: 100%;
     max-height: 650px;
     padding: 0 0 90px 0;
     font-size: 26px;
     line-height: 26px;
     overflow-x: auto;
     overflow-y: hidden;
-    row-gap: 20px;
+    gap: 20px 120px;
 }
 
 .list--levelTwo>li {
     width: 350px;
-    margin: 0 0 0 120px;
 }
 
 .list--levelThree {
