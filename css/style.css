@@ -184,6 +184,34 @@ body {
     width: 26px;
 }
 
+.searchFieldPC {
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.searchFieldPC__input {
+    width: 490px;
+    padding: 0 56px 0 15px;
+    display: flex;
+    font-size: 24px;
+    line-height: 30px;
+    border-radius: 2px;
+}
+
+.searchFieldPC__input::placeholder {
+    color: #B9B9B9;
+}
+
+.searchFieldPC__button {
+    width: 56px;
+    height: 100%;
+    padding: 0 15px;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+}
+
 .item--Mobile {
     display: none;
 }
@@ -228,8 +256,7 @@ body {
 
 .targetMenu__item ul {
     max-height: 680px;
-    max-width: 1050px;
-    padding: 22px 0 0 0;
+    padding: 22px 0 14px 0;
     position: absolute;
     top: 42px;
     z-index: 20;
@@ -239,23 +266,24 @@ body {
     font-size: 20px;
     line-height: 24px;
     font-weight: normal;
-    overflow-x: auto;
     background-color: #FFFFFF;
 }
 
 .targetMenu--left .targetMenu__item ul {
+    margin: 0 -1240px 0 0;
     left: 0;
     border-radius: 0 4px 4px 4px;
 }
 
 .targetMenu--right .targetMenu__item ul {
+    margin: 0 0 0 -1240px;
     right: 0;
     border-radius: 4px 0 4px 4px;
 }
 
 .targetMenu__item li {
     padding: 0 22px 8px;
-    width: 350px;
+    width: 310px;
 }
 
 .targetMenu__item li:has(span):first-child {
@@ -434,7 +462,9 @@ body {
     overflow: auto hidden;
 }
 
-.burgerMenu--PC .burgerMenu__item {}
+.burgerMenu--PC .burgerMenu__item {
+    cursor: pointer;
+}
 
 .burgerMenu--PC .item--levelOne {
     margin: 0 0 42px 0;
@@ -448,6 +478,12 @@ body {
     width: 340px;
     font-size: 25px;
     line-height: 25px;
+}
+
+.burgerMenu--PC .burgerMenu__item:hover,
+.burgerMenu--PC .burgerMenu__item a:hover {
+    text-decoration: none;
+    color: #E06A7E;
 }
 
 .burgerMenu--PC .item--levelThree {
@@ -566,6 +602,34 @@ body {
         width: 22px;
     }
 
+    .searchFieldPC {
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .searchFieldPC__input {
+        width: 310px;
+        padding: 0 30px 0 4px;
+        display: flex;
+        font-size: 18px;
+        line-height: 22px;
+        border-radius: 2px;
+    }
+
+    .searchFieldPC__input::placeholder {
+        color: #B9B9B9;
+    }
+
+    .searchFieldPC__button {
+        width: 30px;
+        height: 100%;
+        padding: 0 4px;
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+    }
+
     .item--Mobile {
         display: none;
     }
@@ -628,11 +692,13 @@ body {
     }
 
     .targetMenu--left .targetMenu__item ul {
+        margin: 0;
         left: 0;
         border-radius: 0 4px 4px 4px;
     }
 
     .targetMenu--right .targetMenu__item ul {
+        margin: 0;
         right: 0;
         border-radius: 4px 0 4px 4px;
     }
@@ -855,7 +921,7 @@ body {
     }
 
     .header__wrapper .container {
-        padding: 0 10px 15px;
+        padding: 0 10px 8px;
         display: grid;
         grid-template-columns: calc(50% - 65px) 130px calc(50% - 65px);
         font-size: 18px;
@@ -874,6 +940,7 @@ body {
     }
 
     .header__controls {
+        margin: 0 0 7px 0;
         display: flex;
     }
 
@@ -931,6 +998,36 @@ body {
 
     .item--search svg {
         width: 22px;
+    }
+
+    .searchFieldMobile {
+        height: 30px;
+        padding: 0 6px;
+        grid-column: span 3;
+        position: relative;
+        display: flex;
+        justify-content: end;
+    }
+
+    .searchFieldMobile__input {
+        width: 100%;
+        padding: 0 38px 0 8px;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 2px;
+    }
+
+    .searchFieldMobile__input::placeholder {
+        color: #B9B9B9;
+    }
+
+    .searchFieldMobile__button {
+        width: 38px;
+        height: 100%;
+        padding: 0 8px;
+        position: absolute;
+        display: flex;
+        cursor: pointer;
     }
 
     .item--PC {
@@ -1031,10 +1128,15 @@ body {
     }
 
     .header__targetMenu {
-        display: none;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
     .header__logoImage {
+        margin: 0 0 7px 0;
         padding: 0 40px 0;
         display: flex;
         justify-content: center;
@@ -1055,12 +1157,13 @@ body {
     .burger__wrapper {
         height: 100vh;
         width: 100%;
-        padding: 15px 20px 0;
+        padding: 15px 20px 40px;
         position: fixed;
         top: 0;
         z-index: 30;
         font-weight: bold;
         background-color: #013767;
+        overflow-y: auto;
     }
 
     .burger__closeButton {
@@ -1162,7 +1265,7 @@ body {
     }
 
     .burger__burgerMenu {
-        margin: 0;
+        margin: 15px 0 0 0;
         display: flex;
         column-gap: 75px;
     }
@@ -1171,20 +1274,42 @@ body {
         display: none;
     }
 
+    .burgerMenu--Mobile .list--levelTwo {
+        height: 0;
+        overflow: hidden;
+    }
+
+    .burgerMenu--Mobile .item--expanded .list--levelTwo {
+        height: unset;
+    }
+
     .burgerMenu--Mobile .item--levelOne {
+        padding: 6px 0;
         font-size: 20px;
         line-height: 24px;
     }
 
+    .burgerMenu--Mobile .item--levelOne svg {
+        width: 12px;
+        fill: #FFFFFF;
+    }
+
+    .burgerMenu--Mobile .item--expanded img {
+        transform: rotate(180deg);
+    }
+
     .burgerMenu--Mobile .item--levelTwo {
+        margin: 18px 0 0 0;
         font-size: 20px;
         line-height: 24px;
         color: #BC4559;
     }
 
     .burgerMenu--Mobile .item--levelThree {
+        padding: 6px 0;
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
+        color: #FFFFFF;
     }
 }

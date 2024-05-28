@@ -30,8 +30,12 @@ for (let i = 0; i < levelOneitemsPC.length; i++) {
 
 // Burger menu Mobile
 const burgerMenuMobile = document.getElementById('burgerMenuMobile');
-const levelOne_items = burgerMenuPC.getElementsByClassName('item--levelOne');
-const levelTwo_lists = burgerMenuPC.getElementsByClassName('list--levelTwo');
+const levelOneItemsMobile = burgerMenuMobile.getElementsByClassName('item--levelOne');
+for (let levelOneItemMobile of levelOneItemsMobile) {
+    levelOneItemMobile.addEventListener('click', () => {
+        levelOneItemMobile.classList.toggle('item--expanded');
+    })
+}
 
 // Burger horizontal scroll by default
 let lists = document.getElementsByClassName('list--levelTwo');
