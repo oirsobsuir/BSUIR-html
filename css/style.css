@@ -451,7 +451,7 @@ body {
 
 .targetMenu__item li {
     padding: 0 22px 8px;
-    width: 310px;
+    width: 340px;
 }
 
 .targetMenu__item li:has(span):first-child {
@@ -726,6 +726,10 @@ body {
 
     .targetMenu__item {
         padding: 3px 10px 5px;
+    }
+
+    .targetMenu__item li {
+        width: 270px;
     }
 
     .header__logoImage {

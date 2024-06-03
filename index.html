@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
+    <script defer src="./scripts/simple-adaptive-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var slider = new ItcSimpleSlider('.itcss', {
+                loop: true,
+                autoplay: true,
+                swipe: true
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -593,6 +604,38 @@
         <div class="header__logoText">БГУИР</div>
     </header>
     <main class="main">
+        <div class="itcss">
+            <div class="itcss__wrapper">
+                <div class="itcss__items">
+                    <div class="itcss__item">
+                        <div
+                            style="height: 450px; background-image: url(https://www.bsuir.by/m/12_100229_1_183506.webp)">
+                            <div class="itcss__text">Text 1</div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div
+                            style="height: 450px; background-image: url(https://www.bsuir.by/m/12_100229_1_159487.webp)">
+                            <div class="itcss__text">Text 2</div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div
+                            style="height: 450px; background-image: url(https://www.bsuir.by/m/12_100229_1_181896.webp)">
+                            <div class="itcss__text">Text 3</div>
+                        </div>
+                    </div>
+                    <div class="itcss__item">
+                        <div
+                            style="height: 450px; background-image: url(https://www.bsuir.by/m/12_100229_1_183079.webp)">
+                            <div class="itcss__text">Text 4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+            <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+        </div>
         <div class="container">
             <div class="newsAndEvents">
                 <article class="news">
