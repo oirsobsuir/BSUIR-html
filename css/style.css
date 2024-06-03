@@ -92,6 +92,7 @@ body {
 
 .header {
     position: relative;
+    z-index: 10;
     color: #FFFFFF;
 }
 
@@ -101,7 +102,7 @@ body {
     padding: 30px 75px 0;
     position: fixed;
     top: 0;
-    z-index: 30;
+    z-index: 40;
     font-weight: bold;
     background-color: #013767;
 }
@@ -324,7 +325,7 @@ body {
 .item--language ul {
     padding: 3px 14px;
     position: absolute;
-    z-index: 10;
+    z-index: 20;
     top: 35px;
     display: none;
     border-radius: 2px;
@@ -427,7 +428,7 @@ body {
     padding: 22px 0 14px 0;
     position: absolute;
     top: 42px;
-    z-index: 20;
+    z-index: 30;
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
@@ -451,7 +452,7 @@ body {
 
 .targetMenu__item li {
     padding: 0 22px 8px;
-    width: 340px;
+    width: 360px;
 }
 
 .targetMenu__item li:has(span):first-child {
@@ -714,10 +715,46 @@ body {
 
 
 
+@media screen and (max-width: 1599px) {
+    .header__wrapper .container {
+        grid-template-columns: 1fr 232px 1fr;
+        font-size: 24px;
+    }
+
+    .header__targetMenu {
+        max-width: 520px;
+    }
+
+    .targetMenu__item {
+        padding: 3px 18px 5px;
+    }
+
+    .targetMenu__item li {
+        width: 315px;
+    }
+
+    .header__logoImage {
+        padding: 0 64px 5px;
+    }
+
+    .header__logoText {
+        font-size: 38px;
+        line-height: 42px;
+    }
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1439px) {
     .header__wrapper .container {
-        grid-template-columns: 1fr 180px 1fr;
-        font-size: 24px;
+        grid-template-columns: 1fr 164px 1fr;
+        font-size: 21px;
     }
 
     .header__targetMenu {
@@ -725,15 +762,20 @@ body {
     }
 
     .targetMenu__item {
-        padding: 3px 10px 5px;
+        padding: 3px 13px 5px;
     }
 
     .targetMenu__item li {
-        width: 270px;
+        width: 255px;
     }
 
     .header__logoImage {
-        padding: 0 30px 5px;
+        padding: 0 38px 5px;
+    }
+
+    .header__logoText {
+        font-size: 34px;
+        line-height: 38px;
     }
 }
 
@@ -846,7 +888,7 @@ body {
 
     .targetMenu__item {
         position: static;
-        padding: 10px 10px 20px;
+        padding: 10px 8px 20px;
     }
 
     .targetMenu__item svg {
@@ -1209,6 +1251,10 @@ body {
     .header__logoImage {
         margin: 0 0 7px 0;
         padding: 0;
+    }
+
+    .main {
+        padding: 58px 0 0 0;
     }
 
     .main .container {
