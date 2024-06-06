@@ -5,7 +5,7 @@ document.addEventListener('click', (e) => {
     if (e.target == searchFieldPCActivator || searchFieldPCActivator.contains(e.target)) {
         searchFieldPCActivator.classList.add('d-none');
         searchFieldPC.classList.remove('d-none');
-    } else if (e.target !== searchFieldPC && !searchFieldPC.contains(e.target)) {
+    } else {
         searchFieldPCActivator.classList.remove('d-none');
         searchFieldPC.classList.add('d-none');
     }

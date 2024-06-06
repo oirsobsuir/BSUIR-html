@@ -1407,17 +1407,12 @@ body {
 }
 
 .footer__menu .list--levelTwo {
-    height: 0;
     margin: 40px 0 0 0;
     display: flex;
     flex-direction: column;
     gap: 18px;
     color: #FFFFFF;
     overflow: hidden;
-}
-
-.footer__menu .item--expanded .list--levelTwo {
-    height: unset;
 }
 
 .footer__menu .item--levelTwo {
@@ -1636,6 +1631,7 @@ body {
 
     .footer__socialMedia {
         width: 100%;
+        max-width: 360px;
         margin: 0;
         display: flex;
         justify-content: space-between;
@@ -1684,10 +1680,15 @@ body {
     }
 
     .footer__menu .list--levelTwo {
+        height: 0;
         margin: 10px 0;
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    .footer__menu .item--expanded .list--levelTwo {
+        height: unset;
     }
 
     .footer__menu .item--levelTwo {

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/simple-adaptive-slider.css">
-    <script defer src="./scripts/simple-adaptive-slider.js"></script>
+    <link rel="stylesheet" href="./css/adaptive-accordion-slider.css">
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var slider = new ItcSimpleSlider('.itcss', {
@@ -812,7 +812,27 @@
                 </div>
                 <a href="#" class="showMore">Все видео</a>
             </article>
-            <article class="bsuirToday"></article>
+            <article class="bsuirToday">
+                <h2>БГУИР сегодня</h2>
+                <div class="accordionSlider" id="accordionSlider">
+                    <div class="accordionSlider__slide slide--selected" style="background-image: url('./img/accordionSlider/stars.jpg');">
+                        <div class="slide__text">2024 — ГОД КАЧЕСТВА</div>
+                        <a href="#" class="slide__link">Подробнее</a>
+                    </div>
+                    <div class="accordionSlider__slide" style="background-image: url('./img/accordionSlider/girl.jpg');">
+                        <div class="slide__text">ВИРТУАЛЬНАЯ ЭКСКУРСИЯ</div>
+                        <a href="#" class="slide__link">Подробнее</a>
+                    </div>
+                    <div class="accordionSlider__slide" style="background-image: url('./img/accordionSlider/classroom.jpg');">
+                        <div class="slide__text">МАГИСТРАТУРА</div>
+                        <a href="#" class="slide__link">Подробнее</a>
+                    </div>
+                    <div class="accordionSlider__slide" style="background-image: url('./img/accordionSlider/stars.jpg');">
+                        <div class="slide__text">КОНКУРС ДИПЛОМОВ</div>
+                        <a href="#" class="slide__link">Подробнее</a>
+                    </div>
+                </div>
+            </article>
         </div>
     </main>
     <footer class="footer">
@@ -848,7 +868,7 @@
             </div>
             <div class="footer__menu">
                 <ul class="menu__list list--levelOne" id="footerMenu">
-                    <li class="menu__item item--levelOne">
+                    <li class="menu__item item--levelOne item--expanded">
                         <div class="d-flex align-items-center">Полезные ресурсы<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" width="10" fill="none">
                                 <path d="M9 0.999999L5 4L1 0.999999" stroke="#BD4559" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -865,7 +885,7 @@
                             <li class="menu__item item--levelTwo">Export.by</li>
                         </ul>
                     </li>
-                    <li class="menu__item item--levelOne">
+                    <li class="menu__item item--levelOne item--expanded">
                         <div class="d-flex align-items-center">Подразделения БГУИР<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" width="10" fill="none">
                                 <path d="M9 0.999999L5 4L1 0.999999" stroke="#BD4559" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -883,7 +903,7 @@
                             <li class="menu__item item--levelTwo">ОП БГУИР Комбинат питания</li>
                         </ul>
                     </li>
-                    <li class="menu__item item--levelOne">
+                    <li class="menu__item item--levelOne item--expanded">
                         <div class="d-flex align-items-center">Тематические сайты<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" width="10" fill="none">
                                 <path d="M9 0.999999L5 4L1 0.999999" stroke="#BD4559" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -898,7 +918,7 @@
                             <li class="menu__item item--levelTwo">DUALBEL</li>
                         </ul>
                     </li>
-                    <li class="menu__item item--levelOne">
+                    <li class="menu__item item--levelOne item--expanded">
                         <div class="d-flex align-items-center">Конференции и олимпиады<svg class="ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 5" width="10" fill="none">
                                 <path d="M9 0.999999L5 4L1 0.999999" stroke="#BD4559" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -941,6 +961,8 @@
     <script src="./scripts/burger.js"></script>
     <script src="./scripts/searchFieldPC.js"></script>
     <script src="./scripts/searchFieldMobile.js"></script>
+    <script defer src="./scripts/simple-adaptive-slider.js"></script>
+    <script src="./scripts/adaptive-accordion-slider.js"></script>
     <script src="./scripts/footer.js"></script>
 </body>
 
