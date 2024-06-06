@@ -105,6 +105,7 @@ body {
     z-index: 40;
     font-weight: bold;
     background-color: #013767;
+    transition: left 300ms;
 }
 
 .burger__closeButton {
