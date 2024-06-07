@@ -442,3 +442,22 @@ class ItcSimpleSlider {
         this._moveTo(index);
     }
 }
+
+// ПРОПИСАННЫЙ ВРУЧНУЮ ИВЕНТ, ЧТОБЫ СЛАЙДЫ СТАЛИ ССЫЛКАМИ
+let mousedownX = null;
+let mousedownY = null;
+let mouseupX = null;
+let mouseupY = null;
+for (let imageLink of document.getElementsByClassName("itcss__image")) {
+    imageLink.addEventListener('mousedown', (event) => {
+        mousedownX = event.clientX;
+        mousedownY = event.clientY;
+    })
+    imageLink.addEventListener('mouseup', (event) => {
+        mouseupX = event.clientX;
+        mouseupY = event.clientY;
+        if (mousedownX == mouseupX && mousedownY == mouseupY) {
+            window.open(imageLink.getAttribute("data-href"), imageLink.getAttribute("data-target"));
+        }
+    })
+}
