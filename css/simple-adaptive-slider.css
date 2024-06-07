@@ -176,7 +176,7 @@
     counter-increment: slide;
 }
 
-.itcss__item>div::before {
+.itcss__item>a::before {
     content: counter(slide);
     position: absolute;
     top: 10px;
@@ -187,7 +187,7 @@
     font-weight: bold;
 }
 
-.itcss__item>div {
+.itcss__item>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,12 +200,12 @@
 }
 
 /* Новые стили для элементов слайдера */
-.itcss__item>div {
+.itcss__item>a {
     transform: scale(1);
     transition: transform 1.7s ease;
 }
 
-.itcss__item_active>div {
+.itcss__item_active>a {
     transform: scale(1.1);
 }
 

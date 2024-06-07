@@ -457,7 +457,7 @@ for (let imageLink of document.getElementsByClassName("itcss__image")) {
         mouseupX = event.clientX;
         mouseupY = event.clientY;
         if (mousedownX == mouseupX && mousedownY == mouseupY) {
-            window.open(imageLink.getAttribute("data-href"), imageLink.getAttribute("data-target"));
+            window.open(imageLink.getAttribute("data-href"), imageLink.getAttribute("target"));
         }
     })
 }
