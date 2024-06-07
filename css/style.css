@@ -1150,7 +1150,7 @@ body {
     }
 
     .burgerMenu--Mobile {
-        display: flex;
+        display: block;
     }
 
     .burgerMenu--Mobile .list--levelTwo {
@@ -1160,12 +1160,14 @@ body {
 
     .burgerMenu--Mobile .item--expanded .list--levelTwo {
         height: unset;
+        margin: 6px 0 0 0;
     }
 
     .burgerMenu--Mobile .item--levelOne {
         padding: 6px 0;
         font-size: 20px;
         line-height: 24px;
+        cursor: pointer;
     }
 
     .burgerMenu--Mobile .item--levelOne svg {
@@ -1178,7 +1180,7 @@ body {
     }
 
     .burgerMenu--Mobile .item--levelTwo {
-        margin: 18px 0 0 0;
+        margin: 10px 0 5px 0;
         font-size: 20px;
         line-height: 24px;
         color: #BC4559;
@@ -1190,6 +1192,10 @@ body {
         line-height: 20px;
         font-weight: 400;
         color: #FFFFFF;
+    }
+
+    .burgerMenu--Mobile .item--levelThree a {
+        display: block;
     }
 
     .header__wrapper .container {
