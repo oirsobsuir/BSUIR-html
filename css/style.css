@@ -392,6 +392,10 @@ body {
     cursor: pointer;
 }
 
+.searchFieldPC__button {
+    fill: #013767;
+}
+
 .searchFieldMobile {
     display: none;
 }
@@ -1247,6 +1251,10 @@ body {
         position: absolute;
         display: flex;
         cursor: pointer;
+    }
+
+    .searchFieldMobile__button svg {
+        fill: #013767;
     }
 
     .targetMenu__item ul {
