@@ -212,24 +212,26 @@ body {
 .burger__burgerMenu {
     margin: 100px 0 0 0;
     display: flex;
-    column-gap: 120px;
 }
 
 .burgerMenu--PC .burgerMenu__list {
-    width: 100%;
     height: calc(100vh - 175px);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .burgerMenu--PC .list--levelOne {
-    width: 300px;
+    padding: 0 50px 50px 0;
+    min-width: 360px;
+    max-width: 360px;
+    gap: 42px;
+    overflow-y: auto;
 }
 
 .burgerMenu--PC .list--levelTwo {
-    padding: 15px 0 75px 0;
-    gap: 25px 155px;
+    padding: 15px 0 50px 0;
+    flex-wrap: wrap;
+    row-gap: 25px;
     overflow: auto hidden;
 }
 
@@ -238,7 +240,6 @@ body {
 }
 
 .burgerMenu--PC .item--levelOne {
-    margin: 0 0 42px 0;
     font-family: 'MADE Evolve Sans EVO', sans-serif;
     font-size: 42px;
     line-height: 42px;
@@ -246,7 +247,8 @@ body {
 }
 
 .burgerMenu--PC .item--levelTwo {
-    width: 340px;
+    margin: 0 50px;
+    width: 360px;
     font-size: 25px;
     line-height: 25px;
 }
@@ -258,7 +260,8 @@ body {
 }
 
 .burgerMenu--PC .item--levelThree {
-    width: 340px;
+    margin: 0 50px;
+    width: 360px;
     padding: 0 0 0 30px;
     font-size: 22px;
     line-height: 22px;
@@ -805,7 +808,6 @@ body {
 
     .burger__burgerMenu {
         margin: 60px 0 0 0;
-        column-gap: 75px;
     }
 
     .burgerMenu--PC .burgerMenu__list {
@@ -813,27 +815,32 @@ body {
     }
 
     .burgerMenu--PC .list--levelOne {
-        width: 230px;
+        padding: 0 30px 30px 0;
+        min-width: 260px;
+        max-width: 260px;
+        gap: 30px;
     }
 
     .burgerMenu--PC .list--levelTwo {
-        padding: 5px 0 25px 0;
+        padding: 5px 0 30px 0;
         gap: 15px 50px;
     }
 
     .burgerMenu--PC .item--levelOne {
-        margin: 0 0 30px 0;
         font-size: 30px;
         line-height: 30px;
     }
 
     .burgerMenu--PC .item--levelTwo {
-        width: 380px;
+        width: 330px;
+        margin: 0 30px;
         font-size: 20px;
         line-height: 24px;
     }
 
     .burgerMenu--PC .item--levelThree {
+        margin: 0 30px;
+        width: 330px;
         font-size: 18px;
     }
 
