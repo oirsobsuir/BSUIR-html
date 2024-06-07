@@ -490,11 +490,17 @@ body {
 
 .header__logoText {
     padding: 100px 0 5px;
+    display: block;
     font-size: 45px;
     line-height: 50px;
     text-align: center;
     color: #FFFFFF;
     background-color: #013767;
+}
+
+.header__logoImage:hover,
+.header__logoText a:hover {
+    text-decoration: none;
 }
 
 .main {
