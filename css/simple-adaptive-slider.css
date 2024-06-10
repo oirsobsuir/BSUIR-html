@@ -63,14 +63,14 @@
 
 @media screen and (max-width: 1199px) {
     .itcss__image {
-        height: calc(100vh - 95px);
+        height: calc(80vh - 95px);
         /* высота экрана - высота хедера */
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
     .itcss__image {
-        height: calc(100vh - 58px);
+        height: 40vh;
         /* высота экрана - высота хедера */
     }
 }
