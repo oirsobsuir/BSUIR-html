@@ -1057,11 +1057,22 @@ body {
     }
 
     .ads__content {
-        column-gap: 2.7472%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 50px 2.7472%;
     }
 
     .ads__content .content__item {
         min-width: 48.6264%;
+        display: none;
+    }
+
+    .ads__content .content__item:nth-child(1),
+    .ads__content .content__item:nth-child(2),
+    .ads__content .content__item:nth-child(3),
+    .ads__content .content__item:nth-child(4) {
+        display: block;
     }
 
     .ads__content .item__date {
@@ -1338,17 +1349,9 @@ body {
     }
 
     .ads__content {
+        display: flex;
         flex-wrap: wrap;
         gap: 40px;
-    }
-
-    .ads__content .content__item {
-        display: none;
-    }
-
-    .ads__content .content__item:nth-child(1),
-    .ads__content .content__item:nth-child(2) {
-        display: block;
     }
 
     .bsuirLife__content {
