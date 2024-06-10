@@ -665,7 +665,6 @@ body {
 
 .ads__content .content__item {
     min-width: 31%;
-    overflow: hidden;
 }
 
 .ads__content .item__date {
@@ -683,6 +682,7 @@ body {
     line-height: 30px;
     font-weight: 700;
     color: #013767;
+    overflow: hidden;
 }
 
 .ads__content .item__link:hover {
@@ -694,6 +694,7 @@ body {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    overflow: hidden;
 }
 
 .bsuirLife__content {
