@@ -675,14 +675,12 @@ body {
 }
 
 .ads__content .item__link {
-    height: 60px;
     margin: 0 0 15px 0;
-    display: inline-block;
+    display: block;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
     color: #013767;
-    overflow: hidden;
 }
 
 .ads__content .item__link:hover {
@@ -690,11 +688,9 @@ body {
 }
 
 .ads__content .item__text {
-    height: 90px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
-    overflow: hidden;
 }
 
 .bsuirLife__content {
@@ -1073,14 +1069,12 @@ body {
     }
 
     .ads__content .item__link {
-        height: 40px;
         margin: 0 0 10px 0;
         font-size: 16px;
         line-height: 20px;
     }
 
     .ads__content .item__text {
-        height: 60px;
         font-size: 16px;
         line-height: 20px;
     }
@@ -1347,7 +1341,6 @@ body {
     }
 
     .ads__content {
-        max-height: 320px;
         flex-wrap: wrap;
         gap: 40px;
     }
