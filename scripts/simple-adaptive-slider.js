@@ -68,7 +68,7 @@ class ItcSimpleSlider {
         this._config = {
             loop: true,
             autoplay: false,
-            interval: 5000,
+            interval: 7000,
             indicators: true,
             swipe: true,
             ...config
