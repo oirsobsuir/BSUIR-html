@@ -557,11 +557,43 @@ body {
 
 .showMore {
     margin: 40px 0 0 0;
-    display: inline-block;
+    display: inline-flex;
     font-size: 32px;
     line-height: 40px;
     font-weight: 700;
     color: #0A3470;
+}
+
+.showMore .waves {
+    width: 26px;
+    margin: 0 0 -2px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    line-height: 26px;
+    color: #AD0D28;
+}
+
+.showMore .wave {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.showMore .wave:nth-child(1) {
+    transition-delay: 0ms;
+}
+
+.showMore .wave:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.showMore .wave:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.showMore:hover .wave {
+    opacity: 1;
 }
 
 .newsAndEvents {
