@@ -1189,6 +1189,12 @@ body {
         margin: 0 0 20px 0;
     }
 
+    .bsuirLife__content .video__playButton {
+        height: 50px;
+        width: 50px;
+        margin: 0 0 20px 20px;
+    }
+
     .bsuirLife__content .item__text {
         font-size: 16px;
         line-height: 20px;
@@ -1439,17 +1445,26 @@ body {
     }
 
     .bsuirLife__content {
-        max-height: 590px;
         flex-wrap: wrap;
         gap: 40px;
     }
 
     .bsuirLife__content .content__item {
         min-width: 100%;
+        display: none;
+    }
+
+    .bsuirLife__content .content__item:nth-child(1),
+    .bsuirLife__content .content__item:nth-child(2) {
+        display: block;
     }
 
     .bsuirLife__content .item__video {
         margin: 0 0 10px 0;
+    }
+
+    .bsuirLife__content .video__playButton {
+        margin: 0 0 15px 15px;
     }
 }
 
@@ -1536,6 +1551,10 @@ body {
     line-height: 26px;
 }
 
+.footer__menu .item--levelTwo a:hover {
+    text-decoration: underline;
+}
+
 .footer__bottom {
     margin: 50px 0 0 0;
     display: flex;
@@ -1598,7 +1617,6 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
-    transform: translateY(-26px);
 }
 
 
@@ -1712,7 +1730,6 @@ body {
         font-size: 16px;
         line-height: 18px;
         text-align: center;
-        transform: translateY(0);
     }
 }
 
@@ -1793,6 +1810,7 @@ body {
 
     .footer__menu .item--levelOne svg {
         display: block;
+        transition: transform 300ms;
     }
 
     .footer__menu .list--levelTwo {
@@ -1803,7 +1821,11 @@ body {
         gap: 10px;
     }
 
-    .footer__menu .item--expanded .list--levelTwo {
+    .footer__menu .item--levelOne.item--expanded svg {
+        transform: rotateX(180deg);
+    }
+
+    .footer__menu .item--levelOne.item--expanded .list--levelTwo {
         height: unset;
     }
 
@@ -1876,6 +1898,5 @@ body {
         font-size: 12px;
         line-height: 16px;
         text-align: start;
-        transform: translateY(0);
     }
 }
