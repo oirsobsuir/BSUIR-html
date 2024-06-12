@@ -105,7 +105,7 @@ body {
     z-index: 40;
     font-weight: bold;
     background-color: #013767;
-    transition: left 300ms;
+    transition: left 500ms;
 }
 
 .burger__closeButton {
@@ -455,7 +455,8 @@ body {
 }
 
 .targetMenu__item ul {
-    max-height: calc(100vh - 93px - 100px);
+    max-width: 1110px;
+    max-height: calc(100vh - 106px - 30px);
     padding: 22px 0 14px 0;
     position: absolute;
     top: 42px;
@@ -468,6 +469,25 @@ body {
     font-weight: 400;
     background-color: #FFFFFF;
     overflow-x: auto;
+}
+
+.targetMenu__item ::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+.targetMenu__item ::-webkit-scrollbar-thumb {
+    background-color: #902a3c;
+    border-radius: 2px;
+}
+
+.targetMenu__item ::-webkit-scrollbar-thumb:hover {
+    background-color: #ad3249;
+}
+
+.targetMenu__item ::-webkit-scrollbar-track {
+    background-color: #00000066;
+    border-radius: 2px;
 }
 
 .targetMenu--left .targetMenu__item ul {
@@ -484,7 +504,7 @@ body {
 
 .targetMenu__item li {
     padding: 0 22px 8px;
-    width: 360px;
+    width: 370px;
 }
 
 .targetMenu__item li:has(span):first-child {
@@ -824,8 +844,13 @@ body {
         padding: 3px 18px 5px;
     }
 
+    .targetMenu__item ul {
+        max-width: 969px;
+        max-height: calc(100vh - 98px - 30px);
+    }
+
     .targetMenu__item li {
-        width: 315px;
+        width: 323px;
     }
 
     .header__logoImage {
@@ -860,8 +885,12 @@ body {
         padding: 3px 13px 5px;
     }
 
+    .targetMenu__item ul {
+        max-width: 792px;
+    }
+
     .targetMenu__item li {
-        width: 255px;
+        width: 264px;
     }
 
     .header__logoImage {
@@ -986,7 +1015,6 @@ body {
     }
 
     .targetMenu__item {
-        position: static;
         padding: 10px 8px 20px;
     }
 
@@ -996,27 +1024,18 @@ body {
     }
 
     .targetMenu__item ul {
-        max-height: calc(100vh - 97px - 100px);
-        width: 100%;
-        max-width: 100%;
+        max-width: 519px;
+        max-height: calc(80vh - 97px - 30px);
         padding: 20px 10px;
-        top: 100%;
+        top: 50px;
         font-size: 16px;
         line-height: 20px;
         overflow-x: auto;
     }
 
-    .targetMenu--left .targetMenu__item ul {
-        margin: 0;
-    }
-
-    .targetMenu--right .targetMenu__item ul {
-        margin: 0;
-    }
-
     .targetMenu__item li {
         padding: 0 10px 5px;
-        width: 33.333%;
+        width: 166px;
     }
 
     .targetMenu__item li:has(span):first-child {
@@ -1373,10 +1392,7 @@ body {
     }
 
     .header__targetMenu {
-        height: 0;
-        width: 0;
-        padding: 0;
-        overflow: hidden;
+        display: none;
     }
 
     .header__logoImage {
