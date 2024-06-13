@@ -134,14 +134,14 @@ body {
     align-items: center;
 }
 
-.socialMedia__link {
+.burger__socialMedia .socialMedia__link {
     height: 45px;
     width: 45px;
 }
 
 .socialMedia__link svg{
-    height: 30px;
-    width: 30px;
+    height: 66%;
+    width: 66%;
 }
 
 .link--instagram {
