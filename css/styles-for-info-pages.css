@@ -1,0 +1,120 @@
+.main {
+    position: relative;
+}
+
+.main .container {
+    padding: 45px 75px 170px;
+}
+
+.main h2 {
+    margin: 0 0 50px 0;
+}
+
+main h4 {
+    font-size: 48px;
+    line-height: 62px;
+    font-weight: 700;
+    color: #0A3470;
+}
+
+.breadcrumbs {
+    margin: 0 0 75px 0;
+    top: 45px;
+    left: 75px;
+    display: flex;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.breadcrumbs__link {
+    display: flex;
+}
+
+.breadcrumbs__link:not(:first-child)::before {
+    content: ")";
+    margin: 0 10px;
+    font-size: 15px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    user-select: none;
+    color: #AD0D28;
+}
+
+.breadcrumbs__link:hover span {
+    text-decoration: underline;
+}
+
+.persons {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: flex;
+    align-items: start;
+    column-gap: 6.25%;
+}
+
+.person:not(:last-child) {
+    margin: 0 0 65px 0;
+}
+
+.person__image {
+    width: 26%;
+    height: 375px;
+}
+
+.person__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.person__info {
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.person__name {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #2A6D98;
+}
+
+.person__name:hover {
+    text-decoration: underline;
+}
+
+.person__contacts {
+    margin: 35px 0 0 0;
+    display: flex;
+    gap: 0 60px;
+}
+
+.contacts__email {
+    color: #0A3470;
+}
+
+.contacts__email:hover {
+    text-decoration: underline;
+}
+
+.contacts__byAppointment {
+    font-weight: 700;
+    color: #2A6D98;
+}
+
+.person:first-child .person__info {
+    min-width: 26%;
+}
+
+.person:first-child .person__contacts {
+    flex-direction: column;
+    gap: 35px 0;
+}
+
+.person:first-child .person__image {
+    width: 100%;
+    height: 675px;
+}
