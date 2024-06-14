@@ -52,7 +52,7 @@ main h4 {
 .person {
     display: flex;
     align-items: start;
-    column-gap: 6.25%;
+    column-gap: 6.5%;
 }
 
 .person:not(:last-child) {
@@ -60,7 +60,7 @@ main h4 {
 }
 
 .person__image {
-    width: 26%;
+    width: 30%;
     height: 375px;
 }
 
@@ -106,7 +106,7 @@ main h4 {
 }
 
 .person:first-child .person__info {
-    min-width: 26%;
+    min-width: 30%;
 }
 
 .person:first-child .person__contacts {
