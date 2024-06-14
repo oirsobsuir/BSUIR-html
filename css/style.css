@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'PT-Sans';
-    src: url('..../fonts/PTSans/PT-Sans_Regular.woff2') format('woff2'),
+    src: url('../fonts/PTSans/PT-Sans_Regular.woff2') format('woff2'),
         url('../fonts/PTSans/PT-Sans_Regular.woff') format('woff'),
         url('../fonts/PTSans/PT-Sans_Regular.ttf') format('truetype');
     font-weight: 400;
@@ -143,74 +143,88 @@ body {
     width: 45px;
 }
 
+.socialMedia__link svg{
+    height: 66%;
+    width: 66%;
+}
+
 .link--instagram {
     background-color: #FE2A72;
 }
 
-.link--instagram img {
-    height: 64.444%;
-    width: 64.444%;
-}
+/*.link--instagram img {*/
+/*    height: 64.444%;*/
+/*    width: 64.444%;*/
+/*}*/
 
 .link--vk {
     background-color: #0E90D2;
 }
 
-.link--vk img {
-    height: 44.178%;
-    width: 74.289%;
-}
+/*.link--vk img {*/
+/*    height: 44.178%;*/
+/*    width: 74.289%;*/
+/*}*/
 
 .link--youtube {
     background-color: #BE0F34;
 }
 
-.link--youtube img {
-    height: 44.178%;
-    width: 62.244%;
-}
+/*.link--youtube img {*/
+/*    height: 44.178%;*/
+/*    width: 62.244%;*/
+/*}*/
 
 .link--facebook {
     background-color: #3B5999;
 }
 
-.link--facebook img {
-    height: 82.311%;
-    width: 42.155%;
-    translate: 20%;
-}
+/*.link--facebook img {*/
+/*    height: 82.311%;*/
+/*    width: 42.155%;*/
+/*    translate: 20%;*/
+/*}*/
 
 .link--telegram {
     background-color: #29A0DC;
 }
 
-.link--telegram img {
-    height: 54.2%;
-    width: 66.244%;
-}
+/*.link--telegram img {*/
+/*    height: 54.2%;*/
+/*    width: 66.244%;*/
+/*}*/
 
 .link--tiktok {
     background-color: #8600AD;
 }
 
-.link--tiktok img {
-    height: 68.267%;
-    width: 60.222%;
-}
+/*.link--tiktok img {*/
+/*    height: 68.267%;*/
+/*    width: 60.222%;*/
+/*}*/
 
 .link--webmail {
     background-color: #B1B500;
 }
 
-.link--webmail img {
+/*.link--webmail img {
     height: 50.111%;
     width: 62.4%;
-}
+}*/
 
 .burger__studyingWeek {
     font-size: 22px;
     line-height: 22px;
     font-weight: bold;
+}
+
+.socialMedia__link:hover {
+    background-color: white;
+    transition: all 800ms;
+}
+
+.socialMedia__link:hover svg {
+    fill: #0A3470;
 }
 
 .burger__burgerMenu {
