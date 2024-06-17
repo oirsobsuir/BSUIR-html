@@ -143,7 +143,7 @@ body {
     width: 45px;
 }
 
-.socialMedia__link svg{
+.socialMedia__link svg {
     height: 66%;
     width: 66%;
 }
@@ -152,65 +152,29 @@ body {
     background-color: #FE2A72;
 }
 
-/*.link--instagram img {*/
-/*    height: 64.444%;*/
-/*    width: 64.444%;*/
-/*}*/
-
 .link--vk {
     background-color: #0E90D2;
 }
-
-/*.link--vk img {*/
-/*    height: 44.178%;*/
-/*    width: 74.289%;*/
-/*}*/
 
 .link--youtube {
     background-color: #BE0F34;
 }
 
-/*.link--youtube img {*/
-/*    height: 44.178%;*/
-/*    width: 62.244%;*/
-/*}*/
-
 .link--facebook {
     background-color: #3B5999;
 }
-
-/*.link--facebook img {*/
-/*    height: 82.311%;*/
-/*    width: 42.155%;*/
-/*    translate: 20%;*/
-/*}*/
 
 .link--telegram {
     background-color: #29A0DC;
 }
 
-/*.link--telegram img {*/
-/*    height: 54.2%;*/
-/*    width: 66.244%;*/
-/*}*/
-
 .link--tiktok {
     background-color: #8600AD;
 }
 
-/*.link--tiktok img {*/
-/*    height: 68.267%;*/
-/*    width: 60.222%;*/
-/*}*/
-
 .link--webmail {
     background-color: #B1B500;
 }
-
-/*.link--webmail img {
-    height: 50.111%;
-    width: 62.4%;
-}*/
 
 .burger__studyingWeek {
     font-size: 22px;
@@ -319,9 +283,10 @@ body {
 }
 
 .header__wrapper .container {
-    padding: 12px 10px 8px;
+    padding: 12px 10px 5px;
     display: grid;
-    grid-template-columns: 1fr 300px 1fr;
+    /* Ширина блока с логотипом задаётся через calc() для его плавного сжатия от 295px в @1920 до 160px в @1200px */
+    grid-template-columns: 1fr calc(18.75% - 61.25px) 1fr;
     font-size: 28px;
     line-height: 36px;
     font-weight: bold;
@@ -438,8 +403,8 @@ body {
 }
 
 .header__targetMenu {
-    width: 100%;
-    max-width: 635px;
+    /* Ширина блока с целевым меню задаётся через calc() для его плавного сжатия от 635px в @1920 до 510px в @1200px */
+    width: calc(42.735% + 292px);
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -451,7 +416,7 @@ body {
 
 .targetMenu__item {
     position: relative;
-    padding: 3px 24px 5px;
+    padding: 3px 14px 5px;
     border-radius: 2px 2px 0 0;
     background-color: #013767;
     cursor: default;
@@ -543,18 +508,21 @@ body {
 }
 
 .header__logoImage {
-    padding: 0 90px 5px;
+    padding: 0 0 8px;
     display: flex;
     justify-content: center;
     align-items: end;
     grid-row-start: span 2;
 }
 
+.header__logoImage svg {
+    width: 120px;
+}
+
 .header__logoText {
-    padding: 100px 0 5px;
+    padding: 98px 0 10px;
     display: block;
     font-size: 45px;
-    line-height: 50px;
     text-align: center;
     color: #FFFFFF;
     background-color: #013767;
@@ -985,75 +953,6 @@ body {
 
 
 
-@media screen and (max-width: 1599px) {
-    .header__wrapper .container {
-        grid-template-columns: 1fr 232px 1fr;
-        font-size: 24px;
-    }
-
-    .header__targetMenu {
-        max-width: 520px;
-    }
-
-    .targetMenu__item {
-        padding: 3px 18px 5px;
-    }
-
-    .targetMenu__item ul {
-        max-width: 969px;
-        max-height: calc(100vh - 98px - 30px);
-    }
-
-    .targetMenu__item li {
-        width: 323px;
-    }
-
-    .header__logoImage {
-        padding: 0 64px 5px;
-    }
-
-    .header__logoText {
-        font-size: 38px;
-        line-height: 42px;
-    }
-}
-
-
-
-@media screen and (max-width: 1439px) {
-    .header__wrapper .container {
-        grid-template-columns: 1fr 164px 1fr;
-        font-size: 21px;
-    }
-
-    .header__targetMenu {
-        max-width: 440px;
-    }
-
-    .targetMenu__item {
-        padding: 3px 13px 5px;
-    }
-
-    .targetMenu__item ul {
-        max-width: 792px;
-    }
-
-    .targetMenu__item li {
-        width: 264px;
-    }
-
-    .header__logoImage {
-        padding: 0 38px 5px;
-    }
-
-    .header__logoText {
-        font-size: 34px;
-        line-height: 38px;
-    }
-}
-
-
-
 @media screen and (max-width: 1199px) {
     .burger__wrapper {
         padding: 50px 50px 0;
@@ -1105,7 +1004,8 @@ body {
 
     .header__wrapper .container {
         padding: 12px 5px 0;
-        grid-template-columns: 1fr 90px 1fr;
+        /* Ширина блока с логотипом задаётся через calc() для его плавного сжатия от 510px в @1200px до 330px в @768px */
+        grid-template-columns: 1fr calc(13.888% - 17px) 1fr;
         font-size: 18px;
         line-height: 22px;
     }
@@ -1146,15 +1046,9 @@ body {
     }
 
     .header__targetMenu {
+        /* Ширина блока с целевым меню задаётся через calc() для его плавного сжатия от 510px в @1200 до 330px в @768px */
+        width: calc(24.935% + 245.5px);
         padding: 5px 0 0 0;
-    }
-
-    .targetMenu--left {
-        justify-content: end;
-    }
-
-    .targetMenu--right {
-        justify-content: start;
     }
 
     .targetMenu__item {
@@ -1190,7 +1084,11 @@ body {
     }
 
     .header__logoImage {
-        padding: 0 10px 20px;
+        padding: 0 0 20px;
+    }
+
+    .header__logoImage svg {
+        width: 70px;
     }
 
     .header__logoText {
