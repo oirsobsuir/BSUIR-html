@@ -1174,6 +1174,7 @@ body {
     .newsAndEvents {
         flex-direction: column-reverse;
         column-gap: unset;
+        row-gap: 75px;
     }
 
     .news {
@@ -1618,6 +1619,10 @@ body {
         margin: 15px 0 0 0;
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .newsAndEvents {
+        row-gap: 50px;
     }
 
     .news__content {
