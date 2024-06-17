@@ -545,7 +545,7 @@ body {
     margin: 0 0 150px 0;
 }
 
-.main h2 {
+.main h1 {
     margin: 0 0 20px 0;
     display: flex;
     font-family: 'MADE Evolve Sans EVO', sans-serif;
@@ -555,7 +555,7 @@ body {
     color: #0A3470;
 }
 
-.main h2:before {
+.main h1:before {
     content: url(../img/logo.svg);
     min-width: 90px;
     margin: 0 10px 0 0;
@@ -1107,13 +1107,13 @@ body {
         margin: 0 0 75px 0;
     }
 
-    .main h2 {
+    .main h1 {
         margin: 0 0 15px 0;
         font-size: 42px;
         line-height: 48px;
     }
 
-    .main h2:before {
+    .main h1:before {
         min-width: 50px;
     }
 
@@ -1553,12 +1553,12 @@ body {
         margin: 0 0 50px 0;
     }
 
-    .main h2 {
+    .main h1 {
         font-size: 32px;
         line-height: 37px;
     }
 
-    .main h2:before {
+    .main h1:before {
         min-width: 40px;
         margin: 0 7px 0 0;
     }
