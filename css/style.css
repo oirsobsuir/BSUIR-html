@@ -84,6 +84,7 @@
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-family: 'PT-Sans', sans-serif;
@@ -420,6 +421,7 @@ body {
     border-radius: 2px 2px 0 0;
     background-color: #013767;
     cursor: default;
+    transition: all 150ms;
 }
 
 .targetMenu__item:hover {
@@ -444,7 +446,7 @@ body {
     position: absolute;
     top: 42px;
     z-index: 30;
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 20px;
@@ -452,6 +454,9 @@ body {
     font-weight: 400;
     background-color: #FFFFFF;
     overflow-x: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 150ms;
 }
 
 .targetMenu__item ::-webkit-scrollbar {
@@ -504,7 +509,8 @@ body {
 }
 
 .targetMenu__item:hover ul {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 
 .header__logoImage {
@@ -791,7 +797,7 @@ body {
 
 .bsuirLife__content .video__playButton path:nth-child(1) {
     fill: #BD4559;
-    transition: fill 150ms;
+    transition: fill 300ms;
 }
 
 .bsuirLife__content .video__previewImage:hover .video__playButton path:nth-child(1) {
@@ -949,6 +955,30 @@ body {
     font-size: 20px;
     line-height: 26px;
     text-align: center;
+}
+
+.scrollTopButton {
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    right: 85px;
+    bottom: 350px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.scrollTopButton path:nth-child(1) {
+    fill: #BD4559;
+    transition: all 300ms;
+}
+
+.scrollTopButton:hover path:nth-child(1) {
+    fill: #e6586f;
+}
+
+.scrollTopButton path:nth-child(2) {
+    fill: #FFFFFF;
 }
 
 
@@ -1362,6 +1392,13 @@ body {
         font-size: 16px;
         line-height: 18px;
         text-align: center;
+    }
+
+    .scrollTopButton {
+        height: 55px;
+        width: 55px;
+        right: 30px;
+        bottom: 225px;
     }
 }
 
@@ -1780,5 +1817,9 @@ body {
         font-size: 12px;
         line-height: 16px;
         text-align: start;
+    }
+
+    .scrollTopButton {
+        display: none;
     }
 }
