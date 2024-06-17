@@ -114,6 +114,7 @@ body {
 }
 
 .burger__closeButton {
+    height: 20px;
     width: 20px;
     position: absolute;
     top: 25px;
@@ -147,6 +148,7 @@ body {
 .socialMedia__link svg {
     height: 66%;
     width: 66%;
+    fill: #FFFFFF;
 }
 
 .link--instagram {
@@ -326,6 +328,7 @@ body {
 
 .item--burgerMenu svg {
     width: 26px;
+    height: 100%;
 }
 
 .item--language {
@@ -353,6 +356,8 @@ body {
 
 .item--visuallyImpaired svg {
     width: 30px;
+    height: 100%;
+    fill: #FFFFFF;
 }
 
 .controls--right {
@@ -361,6 +366,7 @@ body {
 
 .item--search svg {
     width: 26px;
+    height: 100%;
 }
 
 .item--Mobile {
@@ -431,6 +437,7 @@ body {
 
 .targetMenu__item svg {
     width: 16px;
+    height: 21px;
     margin: 0 0 0 14px;
     fill: #FFFFFF;
 }
@@ -521,7 +528,7 @@ body {
     grid-row-start: span 2;
 }
 
-.header__logoImage svg {
+.header__logoImage img {
     width: 120px;
 }
 
@@ -854,8 +861,10 @@ body {
     background-color: #BD4559;
 }
 
-.footer__contactUs img {
+.footer__contactUs svg {
     width: 32px;
+    height: 100%;
+    fill: #FFFFFF;
 }
 
 .footer__menu .list--levelOne {
@@ -927,6 +936,7 @@ body {
 
 .footer__buildings svg {
     width: 16px;
+    height: 22px;
 }
 
 .footer__logo {
@@ -941,7 +951,7 @@ body {
     border-right: 3px solid #BD4559;
 }
 
-.footer__logoImage svg {
+.footer__logoImage img {
     width: 125px;
 }
 
@@ -1117,7 +1127,7 @@ body {
         padding: 0 0 20px;
     }
 
-    .header__logoImage svg {
+    .header__logoImage img {
         width: 70px;
     }
 
@@ -1317,7 +1327,7 @@ body {
         gap: 18px;
     }
 
-    .footer__contactUs img {
+    .footer__contactUs svg {
         width: 22px;
     }
 
@@ -1378,7 +1388,7 @@ body {
         border-right: 2px solid #BD4559;
     }
 
-    .footer__logoImage svg {
+    .footer__logoImage img {
         width: 100px;
     }
 
@@ -1461,10 +1471,6 @@ body {
         font-size: 20px;
         line-height: 24px;
         cursor: pointer;
-    }
-
-    .burgerMenu--Mobile .item--levelOne svg {
-        width: 12px;
     }
 
     .burgerMenu--Mobile .item--levelOne svg {
@@ -1707,7 +1713,7 @@ body {
         background-color: #BD4559;
     }
 
-    .footer__contactUs img {
+    .footer__contactUs svg {
         width: 20px;
     }
 
@@ -1802,7 +1808,7 @@ body {
         border-right: 2px solid #BD4559;
     }
 
-    .footer__logoImage svg {
+    .footer__logoImage img {
         width: 85px;
     }
 
