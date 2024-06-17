@@ -28,20 +28,20 @@ for (let i = 0; i < levelOneitemsPC.length; i++) {
     })
 }
 
+// Burger horizontal scroll by default
+let lists = burgerMenuPC.getElementsByClassName('list--levelTwo');
+for (let list of lists) {
+    list.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        list.scrollLeft += e.deltaY;
+    })
+}
+
 // Burger menu Mobile
 const burgerMenuMobile = document.getElementById('burgerMenuMobile');
 const levelOneItemsMobile = burgerMenuMobile.getElementsByClassName('item--levelOne');
 for (let levelOneItemMobile of levelOneItemsMobile) {
     levelOneItemMobile.addEventListener('click', () => {
         levelOneItemMobile.classList.toggle('item--expanded');
-    })
-}
-
-// Burger horizontal scroll by default
-let lists = document.getElementsByClassName('list--levelTwo');
-for (let list of lists) {
-    list.addEventListener('wheel', (e) => {
-        e.preventDefault();
-        list.scrollLeft += e.deltaY;
     })
 }
