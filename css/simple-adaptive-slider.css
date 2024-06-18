@@ -47,23 +47,9 @@
     /* высота экрана - высота хедера */
 }
 
-@media screen and (max-width: 1599px) {
-    .itcss__image {
-        height: calc(100vh - 147px);
-        /* высота экрана - высота хедера */
-    }
-}
-
-@media screen and (max-width: 1439px) {
-    .itcss__image {
-        height: calc(100vh - 143px);
-        /* высота экрана - высота хедера */
-    }
-}
-
 @media screen and (max-width: 1199px) {
     .itcss__image {
-        height: calc(80vh - 95px);
+        height: calc(80vh - 108px);
         /* высота экрана - высота хедера */
     }
 }

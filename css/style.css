@@ -376,7 +376,7 @@ body {
 
 .searchFieldPC {
     width: 100%;
-    max-width: 520px;
+    max-width: 525px;
     margin: 0 0 0 14px;
     position: relative;
     display: flex;
@@ -416,6 +416,7 @@ body {
 .header__targetMenu {
     /* Ширина блока с целевым меню задаётся через calc() для его плавного сжатия от 635px в @1920 до 510px в @1200px */
     width: calc(42.735% + 292px);
+    margin: 5px 0 0 0;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -452,7 +453,7 @@ body {
 
 .targetMenu__item ul {
     max-width: 1110px;
-    max-height: calc(100vh - 106px - 30px);
+    max-height: calc(100vh - 100px);
     padding: 22px 0 14px 0;
     position: absolute;
     top: 42px;
@@ -537,7 +538,7 @@ body {
 }
 
 .header__logoText {
-    padding: 98px 0 10px;
+    padding: 102px 0 10px;
     display: block;
     font-size: 45px;
     text-align: center;
@@ -1096,7 +1097,6 @@ body {
     .header__targetMenu {
         /* Ширина блока с целевым меню задаётся через calc() для его плавного сжатия от 510px в @1200 до 330px в @768px */
         width: calc(24.935% + 245.5px);
-        padding: 5px 0 0 0;
     }
 
     .targetMenu__item {
@@ -1110,7 +1110,7 @@ body {
 
     .targetMenu__item ul {
         max-width: 519px;
-        max-height: calc(80vh - 97px - 30px);
+        max-height: calc(80vh - 115px);
         padding: 20px 10px;
         top: 50px;
         font-size: 16px;
