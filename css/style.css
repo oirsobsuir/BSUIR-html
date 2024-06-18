@@ -900,6 +900,7 @@ body {
     gap: 18px;
     color: #FFFFFF;
     overflow: hidden;
+    font-weight: 400;
 }
 
 .footer__menu .item--levelTwo {
@@ -1366,6 +1367,7 @@ body {
     .footer__menu .list--levelTwo {
         margin: 25px 0 0 0;
         gap: 10px;
+        font-weight: unset;
     }
 
     .footer__menu .item--levelTwo {
