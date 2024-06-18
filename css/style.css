@@ -972,9 +972,10 @@ body {
 }
 
 .footer__copyright {
+    margin: 15px 150px 0 0;
     font-size: 20px;
     line-height: 26px;
-    text-align: center;
+    text-align: right;
 }
 
 .scrollTopButton {
@@ -1421,10 +1422,9 @@ body {
     }
 
     .footer__copyright {
-        margin: 50px 0 0 0;
+        margin: 10px 50px 0 0;
         font-size: 16px;
         line-height: 18px;
-        text-align: center;
     }
 
     .scrollTopButton {
