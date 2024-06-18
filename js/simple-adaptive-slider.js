@@ -456,7 +456,7 @@ for (let imageLink of document.getElementsByClassName("itcss__image")) {
     imageLink.addEventListener('mouseup', (event) => {
         mouseupX = event.clientX;
         mouseupY = event.clientY;
-        if (mousedownX == mouseupX && mousedownY == mouseupY) {
+        if (mousedownX == mouseupX && mousedownY == mouseupY && imageLink.getAttribute("data-href")) {
             window.open(imageLink.getAttribute("data-href"), imageLink.getAttribute("target"));
         }
     })
