@@ -793,7 +793,6 @@ body {
     right: -1px;
     bottom: -1px;
     left: -1px;
-    background: green;
     display: flex;
     cursor: pointer;
 }
@@ -1290,11 +1289,12 @@ body {
     }
 
     .bsuirLife__content {
-        gap: 2.7472%;
+        flex-wrap: wrap;
+        gap: 30px 2.7472%;
     }
 
     .bsuirLife__content .content__item {
-        min-width: 48.6264%;
+        flex: 0 0 48.6264%;
     }
 
     .bsuirLife__content .item__video {
@@ -1663,18 +1663,11 @@ body {
     }
 
     .bsuirLife__content {
-        flex-wrap: wrap;
         gap: 40px;
     }
 
     .bsuirLife__content .content__item {
-        min-width: 100%;
-        display: none;
-    }
-
-    .bsuirLife__content .content__item:nth-child(1),
-    .bsuirLife__content .content__item:nth-child(2) {
-        display: block;
+        flex: 0 0 100%;
     }
 
     .bsuirLife__content .item__video {
