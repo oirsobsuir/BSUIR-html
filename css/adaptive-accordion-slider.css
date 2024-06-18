@@ -32,6 +32,7 @@
     text-align: left;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+    cursor: default;
 }
 
 .accordionSlider__slide.slide--selected .slide__text {
