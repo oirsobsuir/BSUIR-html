@@ -1498,9 +1498,9 @@ body {
     }
 
     .burgerMenu--Mobile .item--levelThree {
-        padding: 6px 0;
-        font-size: 16px;
-        line-height: 20px;
+        padding: 10px 0;
+        font-size: 18px;
+        line-height: 22px;
         font-weight: 400;
         color: #FFFFFF;
     }
