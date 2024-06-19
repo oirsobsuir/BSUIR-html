@@ -985,7 +985,7 @@ body {
 .scrollTopButton {
     height: 80px;
     width: 80px;
-    position: absolute;
+    position: fixed;
     right: 85px;
     bottom: 350px;
     display: flex;
@@ -993,7 +993,9 @@ body {
     align-items: center;
     background-color: #BD4559;
     border-radius: 50%;
+    transform: rotate(-90deg);
     transition: background-color 300ms;
+    cursor: pointer;
 }
 
 .scrollTopButton svg {
