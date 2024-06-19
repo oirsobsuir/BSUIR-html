@@ -804,24 +804,28 @@ body {
 }
 
 .bsuirLife__content .video__playButton {
-    position: absolute;
     height: 60px;
     width: 60px;
+    position: absolute;
     bottom: 25px;
     left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BD4559;
+    border-radius: 50%;
+    transition: background-color 300ms;
 }
 
-.bsuirLife__content .video__playButton path:nth-child(1) {
-    fill: #BD4559;
-    transition: fill 300ms;
-}
-
-.bsuirLife__content .video__previewImage:hover .video__playButton path:nth-child(1) {
-    fill: #e6586f;
-}
-
-.bsuirLife__content .video__playButton path:nth-child(2) {
+.bsuirLife__content .video__playButton svg {
+    height: 30%;
+    width: 32%;
+    transform: translate(2px);
     fill: #FFFFFF;
+}
+
+.bsuirLife__content .video__previewImage:hover .video__playButton {
+    background-color: #e6586f;
 }
 
 .bsuirLife__content .item__text {
@@ -981,25 +985,26 @@ body {
 .scrollTopButton {
     height: 80px;
     width: 80px;
-    position: fixed;
+    position: absolute;
     right: 85px;
     bottom: 350px;
-    transform: rotate(-90deg);
-    cursor: pointer;
-    transition: all 300ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BD4559;
+    border-radius: 50%;
+    transition: background-color 300ms;
 }
 
-.scrollTopButton path:nth-child(1) {
-    fill: #BD4559;
-    transition: all 300ms;
-}
-
-.scrollTopButton:hover path:nth-child(1) {
-    fill: #e6586f;
-}
-
-.scrollTopButton path:nth-child(2) {
+.scrollTopButton svg {
+    height: 30%;
+    width: 32%;
+    transform: translate(2px);
     fill: #FFFFFF;
+}
+
+.scrollTopButton:hover {
+    background-color: #e6586f;
 }
 
 
