@@ -1757,12 +1757,6 @@ body {
         transform: rotateX(180deg);
     }
 
-    .footer__bottom {
-        margin: 20px 0 0 0;
-        flex-direction: column-reverse;
-        align-items: start;
-    }
-
     .footer__address {
         font-size: 16px;
         line-height: 20px;
@@ -1804,5 +1798,15 @@ body {
 
     .scrollTopButton {
         display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .footer__bottom {
+        margin: 20px 0 0 0;
+        flex-direction: column-reverse;
+        align-items: start;
     }
 }
