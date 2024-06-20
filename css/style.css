@@ -1,7 +1,3 @@
-:root {
-    font-size: 20px;
-}
-
 @font-face {
     font-family: 'PT-Sans';
     src: url('../fonts/PTSans/PT-Sans_Regular.woff2') format('woff2'),
@@ -82,6 +78,60 @@
     font-weight: 700;
     font-style: normal;
 }
+
+
+
+:root {
+    font-family: 'PT-Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.15;
+}
+
+h1 {
+    display: flex;
+    font-size: 3.333rem;
+    font-family: 'MADE Evolve Sans EVO', sans-serif;
+    font-weight: 500;
+    color: #0A3470;
+}
+
+h1:before {
+    content: url(../img/logo.svg);
+    min-width: 3.833rem;
+    max-width: 3.833rem;
+    margin: 0 0.42rem 0 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A3470;
+}
+
+h3 {
+    font-size: 1.666rem;
+    font-weight: 700;
+    color: #013767;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #013767;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #013767;
+}
+
+strong {
+    font-weight: 700;
+    color: #2A6D98;
+}
+
+
 
 body {
     position: relative;
@@ -565,19 +615,6 @@ body {
 
 .main h1 {
     margin: 0 0 20px 0;
-    display: flex;
-    font-family: 'MADE Evolve Sans EVO', sans-serif;
-    font-size: 80px;
-    line-height: 92px;
-    font-weight: 500;
-    color: #0A3470;
-}
-
-.main h1:before {
-    content: url(../img/logo.svg);
-    min-width: 90px;
-    max-width: 90px;
-    margin: 0 10px 0 0;
 }
 
 .showMore {
@@ -1013,6 +1050,10 @@ body {
 
 
 @media screen and (max-width: 1199px) {
+    :root {
+        font-size: 20px;
+    }
+
     .burger__wrapper {
         padding: 50px 50px 0;
     }
@@ -1170,14 +1211,6 @@ body {
 
     .main h1 {
         margin: 0 0 15px 0;
-        font-size: 42px;
-        line-height: 48px;
-    }
-
-    .main h1:before {
-        min-width: 50px;
-        max-width: 50px;
-        margin: 0 7px 0 0;
     }
 
     .showMore {
@@ -1443,6 +1476,10 @@ body {
 
 
 @media screen and (max-width: 767px) {
+    :root {
+        font-size: 16px;
+    }
+
     .burger__wrapper {
         padding: 15px 20px 40px;
         overflow-y: auto;
@@ -1611,16 +1648,6 @@ body {
 
     .main article:not(:last-child) {
         margin: 0 0 50px 0;
-    }
-
-    .main h1 {
-        font-size: 32px;
-        line-height: 37px;
-    }
-
-    .main h1:before {
-        min-width: 40px;
-        max-width: 40px;
     }
 
     .showMore {
