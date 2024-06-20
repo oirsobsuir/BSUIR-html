@@ -95,14 +95,6 @@ a.person__name {
     gap: 0 60px;
 }
 
-.contacts__email {
-    color: #0A3470;
-}
-
-.contacts__email:hover {
-    text-decoration: underline;
-}
-
 .contacts__byAppointment {
     font-weight: 700;
     color: #2A6D98;
