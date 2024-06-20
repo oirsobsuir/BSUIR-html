@@ -1,0 +1,14 @@
+.bsuirLife__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem 3.5%;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+
+@media screen and (max-width: 1100px) {
+    .bsuirLife__content {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem 3%;
+    }
+}

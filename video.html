@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белорусский государственный университет информатики и радиоэлектроники</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles-for-info-pages.css">
+    <link rel="stylesheet" href="./css/styles-for-video-page.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="burger__wrapper" id="burgerWrapper" style="left:-101vw">
+        <div class="container">
+            <svg class="burger__closeButton" id="burgerClose">
+                <use xlink:href="./img/sprite.svg#closeButton"></use>
+            </svg>
+            <div class="burger__top">
+                <div class="burger__socialMedia">
+                    <a href="#" class="socialMedia__link link--instagram">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socialMedia__link link--vk">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socialMedia__link link--youtube">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socialMedia__link link--facebook">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socialMedia__link link--telegram">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socialMedia__link link--tiktok">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#tiktok"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="socialMedia__link link--webmail">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#webmail"></use>
+                        </svg>
+                    </a>
+                </div>
+                <span class="burger__studyingWeek">1 учебная неделя</span>
+            </div>
+            <div class="burger__burgerMenu burgerMenu--PC" id="burgerMenuPC">
+                <ul class="burgerMenu__list list--levelOne">
+                    <li class="burgerMenu__item item--levelOne">Университет</li>
+                    <li class="burgerMenu__item item--levelOne">Образование</li>
+                    <li class="burgerMenu__item item--levelOne">Наука</li>
+                    <li class="burgerMenu__item item--levelOne">Молодёжная политика</li>
+                    <li class="burgerMenu__item item--levelOne">Международное сотрудничество</li>
+                    <li class="burgerMenu__item item--levelOne">Контакты</li>
+                </ul>
+                <ul class="burgerMenu__list list--levelTwo d-none">
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Структура</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Ректорат</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Общая информация</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="./rectorate.html">Ректорат</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">История</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">БГУИР сегодня</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Виртуальная экскурсия</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Символика</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Сертификаты</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Нравственный кодекс БГУИР</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Доска почета</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">БГУИР в рейтингах</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Факультеты (общая)</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">СМК</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Документы</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Приказы</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Страница юриста</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Нормативно-правовое обеспечение учебного
+                        процесса</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Противодействие коррупции</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Пресс-служба</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Молодёжное ТВ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Газета "Импульс"</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">СМИ о БГУИР</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Учебно-методическое объединение</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Общественные организации</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Фотогалерея</a></li>
+                </ul>
+                <ul class="burgerMenu__list list--levelTwo d-none">
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Довузовская подготовка</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Специальности</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Высшее 1 ступень</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФКП</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФИТУ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФРЭ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФКСиС</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФИБ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ИЭФ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФДП и ПО</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Военный факультет</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Кафедры</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Расписание</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Оплата обучения</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Стипендии</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Практика</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">восстановление</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Распределение</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Магистратура 2 ступень</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Асирантура и докторантура</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Дополнительное ИИТ</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">ЦРДО</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Сертифицированные курсы</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Заказчикам кадров</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Довузовская подготовка</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Специальности</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Высшее 1 ступень</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФКП</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФИТУ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФРЭ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФКСиС</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФИБ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ИЭФ</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">ФДП и ПО</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Военный факультет</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Кафедры</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Расписание</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Оплата обучения</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Стипендии</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">Практика</a></li>
+                    <li class="burgerMenu__item item--levelThree"><a href="#">восстановление</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Распределение</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Магистратура 2 ступень</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Асирантура и докторантура</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Дополнительное ИИТ</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">ЦРДО</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Сертифицированные курсы</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Заказчикам кадров</a></li>
+                </ul>
+                <ul class="burgerMenu__list list--levelTwo d-none">
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">НИЧ</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Администрация</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Лаборатории и центры</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Сектор студенческой науки</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Совет молодых ученых</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Асирантура и докторантура</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Совет по защите диссертаций</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Научно-методический совет</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Научные мероприятия</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Доклады БГУИР</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Научно-технологический парк</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Совет университета</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Научные школы</a></li>
+                </ul>
+                <ul class="burgerMenu__list list--levelTwo d-none">
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Контакты центра</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">иностранным гражданам</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Программы мобильности</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Межвузовское сотрудничество</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Свалка баннеров</a></li>
+                </ul>
+                <ul class="burgerMenu__list list--levelTwo d-none">
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Структура управления</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">События года</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Документация</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Студенческая жизнь</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Патриотическое воспитание</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Сохраняя память о прошлом — строим
+                        будущее</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Цели устойчивого развития</a></li>
+                </ul>
+                <ul class="burgerMenu__list list--levelTwo d-none">
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Приём граждан</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Пресс-служба</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Приёмная комиссия</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Подраделения НИЧ</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Центр продвижения образовательных услуг</a>
+                    </li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Телефонный справочник</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Электронное обращение</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Одно окно</a></li>
+                    <li class="burgerMenu__item item--levelTwo"><a href="#">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="burger__burgerMenu burgerMenu--Mobile" id="burgerMenuMobile">
+                <ul class="burgerMenu__list list--levelOne">
+                    <li class="burgerMenu__item item--levelOne">
+                        <div class="d-flex align-items-center">
+                            ВОЙТИ
+                            <svg class="ml-2" width="12" height="16" fill="#FFFFFF">
+                                <use xlink:href="./img/sprite.svg#login"></use>
+                            </svg>
+                            <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                            </svg>
+                        </div>
+                        <ul class="burgerMenu__list list--levelTwo">
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Личный кабинет
+                                сотрудника</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Личный кабинет
+                                студента</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Система
+                                электронного обучения</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Почта</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Личный кабинет
+                                абитуриента (во время приемной компании)</a></li>
+                        </ul>
+                    </li>
+                    <li class="burgerMenu__item item--levelOne">
+                        <div class="d-flex align-items-center">
+                            СОТРУДНИКАМ
+                            <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                            </svg>
+                        </div>
+                        <ul class="burgerMenu__list list--levelTwo">
+                            <li class="burgerMenu__item item--levelTwo">ПРЕПОДАВАТЕЛЬСКАЯ ДЕЯТЕЛЬНОСТЬ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Расписание</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Документы
+                                УМУ</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Кафедры</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Факультеты</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelTwo">СОЦИАЛЬНЫЕ ВОПРОСЫ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Профком</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Коллективный
+                                договор</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Летний
+                                отдых</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Спорт</a></li>
+                            <li class="burgerMenu__item item--levelTwo">НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Асирантура и
+                                докторантура</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Советы по
+                                защите диссертации</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Научные
+                                мероприятия</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Доклады
+                                БГУИР</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Библиотека</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Репозиторий</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelTwo">АДМИНИСТРАТИВНАЯ ДЕЯТЕЛЬНОСТЬ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Образцы
+                                документов центра кадровой работы</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Конкурс на
+                                замещение должностей</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Повышение
+                                квалификации</a></li>
+                            <li class="burgerMenu__item item--levelTwo">ИНФОРМАЦИЯ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">СМК</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Делопроизводство
+                                БГУИР</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Приказы</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Программы
+                                мобильности</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Одно окно</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Система единой
+                                технической поддержки</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Политика
+                                безопасности в отношении персональных данных БГУИР</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Правила
+                                педагогических работников</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Телефонный
+                                справочник</a></li>
+                        </ul>
+                    </li>
+                    <li class="burgerMenu__item item--levelOne">
+                        <div class="d-flex align-items-center">
+                            СТУДЕНТАМ
+                            <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                            </svg>
+                        </div>
+                        <ul class="burgerMenu__list list--levelTwo">
+                            <li class="burgerMenu__item item--levelTwo">УЧЕБА</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Расписание</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Кафедры</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Факультеты</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Библиотека</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">ЭРУД</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Репозиторий</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Стипендия</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Оплата
+                                обучения</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Информация для
+                                восстановления</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Стажировка</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Практика</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Центр языковой
+                                подготовки</a></li>
+                            <li class="burgerMenu__item item--levelTwo">СТУДЕНЧЕСКОЕ СОУПРАВЛЕНИЕ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Студенческий
+                                совет БГУИР</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Студенческие
+                                советы иностранных граждан</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">БРСМ БГУИР</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Студенческий
+                                профком</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Волонтерский
+                                центр</a></li>
+                            <li class="burgerMenu__item item--levelTwo">СТУДЕНЧЕСКИЕ ВОЗМОЖНОСТИ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Летний
+                                отдых</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Студотряды</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Молодежные
+                                объединения</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Спорт</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Культурный
+                                центр</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Сектор
+                                студенческой науки</a></li>
+                            <li class="burgerMenu__item item--levelTwo">СОЦИАЛЬНЫЕ ВОПРОСЫ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Социальная
+                                поддержка</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Студгородок</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">СППС</a></li>
+                            <li class="burgerMenu__item item--levelTwo">ДОКУМЕНТЫ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Шаблоны
+                                заявлений</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Приказы</a>
+                            </li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Выдача архивных
+                                справок</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Заказ
+                                студенческих справок</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Правила
+                                внутреннего распорядка обучающихся</a></li>
+                            <li class="burgerMenu__item item--levelTwo">ИНФОРМАЦИЯ</li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Заявка в
+                                техподдержку</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Система единой
+                                технической поддержки</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Телефонный
+                                справочник</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burgerMenu__item item--levelOne">
+                        <div class="d-flex align-items-center">
+                            ПОСТУПАЮЩИМ
+                            <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                            </svg>
+                        </div>
+                        <ul class="burgerMenu__list list--levelTwo">
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Для
+                                абитуриентов</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Довузовская
+                                подготовка</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a
+                                    href="https://www.bsuir.by">Специальности</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Заочное
+                                обучение</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Дистанционное
+                                обучение</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Сокращенное
+                                обучение</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Поступление в
+                                магистратуру</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Второе
+                                высшее</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Поступление в
+                                аспирантура</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Повышение
+                                квалификации</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Иностранным
+                                гражданам</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Абитуриентам
+                                Казахстана и стран СНГ</a></li>
+                        </ul>
+                    </li>
+                    <li class="burgerMenu__item item--levelOne">
+                        <div class="d-flex align-items-center">
+                            ВЫПУСКНИКАМ
+                            <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                            </svg>
+                        </div>
+                        <ul class="burgerMenu__list list--levelTwo">
+                            <li class="burgerMenu__item item--levelThree"><a
+                                    href="https://www.bsuir.by">Магистратура</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Аспирантура и
+                                докторантура</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Повышение
+                                квалификации</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Выдача архивных
+                                справок</a></li>
+                        </ul>
+                    </li>
+                    <li class="burgerMenu__item item--levelOne">
+                        <div class="d-flex align-items-center">
+                            УСЛУГИ
+                            <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                            </svg>
+                        </div>
+                        <ul class="burgerMenu__list list--levelTwo">
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Образовательные
+                                услуги</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Сертифицированные
+                                курсы</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Полиграфические
+                                услуги</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Спортзал,
+                                бассейн</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">СОК
+                                "Браславские озера"</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Комбинат
+                                питания</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Договор
+                                публичной оферты на оказание услуг</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Центр языковой
+                                подготовки</a></li>
+                            <li class="burgerMenu__item item--levelThree"><a href="https://www.bsuir.by">Повышение
+                                квалификации</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrapper">
+        <div class="container">
+            <div class="header__controls controls--left">
+                <div class="controls__item item--burgerMenu" id="burgerOpen">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#burger"></use>
+                    </svg>
+                </div>
+                <div class="controls__item item--language">
+                    RU
+                    <ul>
+                        <li><a href="#">BEL</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">VIE</a></li>
+                        <li><a href="#">UZB</a></li>
+                        <li><a href="#">CHI</a></li>
+                    </ul>
+                </div>
+                <div class="controls__item item--visuallyImpaired item--PC">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#visuallyImpaired_open"></use>
+                    </svg>
+                </div>
+            </div>
+            <a href="./index.html" class="header__logoImage">
+                <img src="./img/logo.png" alt="Логотип БГУИР">
+            </a>
+            <div class="header__controls controls--right">
+                <div class="controls__item item--visuallyImpaired item--Mobile">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#visuallyImpaired_open"></use>
+                    </svg>
+                </div>
+                <div class="controls__item item--search item--PC" id="item--search--PC">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#search"></use>
+                    </svg>
+                </div>
+                <div class="searchFieldPC d-none" id="searchFieldPC">
+                    <input class="searchFieldPC__input" type="text" placeholder="Поиск">
+                    <div class="searchFieldPC__button">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#search"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="controls__item item--search item--Mobile" id="item--search--Mobile">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#search"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="header__targetMenu targetMenu--left">
+                <div class="targetMenu__item">
+                    Войти
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#login"></use>
+                    </svg>
+                    <ul>
+                        <li><a href="#">Личный кабинет сотрудника</a></li>
+                        <li><a href="#">Личный кабинет студента</a></li>
+                        <li><a href="#">Система электронного обучения</a></li>
+                        <li><a href="#">Почта</a></li>
+                        <li><a href="#">Личный кабинет абитуриента (во время приемной компании)</a></li>
+                    </ul>
+                </div>
+                <div class="targetMenu__item">
+                    Сотрудникам
+                    <ul>
+                        <li><span>ПРЕПОДАВАТЕЛЬСКАЯ ДЕЯТЕЛЬНОСТЬ</span></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Документы УМУ</a></li>
+                        <li><a href="#">Кафедры</a></li>
+                        <li><a href="#">Факультеты</a></li>
+                        <li><span>СОЦИАЛЬНЫЕ ВОПРОСЫ</span></li>
+                        <li><a href="#">Профком</a></li>
+                        <li><a href="#">Коллективный договор</a></li>
+                        <li><a href="#">Летний отдых</a></li>
+                        <li><a href="#">Спорт</a></li>
+                        <li><span>НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ</span></li>
+                        <li><a href="#">Асирантура и докторантура</a></li>
+                        <li><a href="#">Советы по защите диссертации</a></li>
+                        <li><a href="#">Научные мероприятия</a></li>
+                        <li><a href="#">Доклады БГУИР</a></li>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">Репозиторий</a></li>
+                        <li><span>АДМИНИСТРАТИВНАЯ ДЕЯТЕЛЬНОСТЬ</span></li>
+                        <li><a href="#">Образцы документов центра кадровой работы</a></li>
+                        <li><a href="#">Конкурс на замещение должностей</a></li>
+                        <li><a href="#">Повышение квалификации</a></li>
+                        <li><span>ИНФОРМАЦИЯ</span></li>
+                        <li><a href="#">СМК</a></li>
+                        <li><a href="#">Делопроизводство БГУИР</a></li>
+                        <li><a href="#">Приказы</a></li>
+                        <li><a href="#">Программы мобильности</a></li>
+                        <li><a href="#">Одно окно</a></li>
+                        <li><a href="#">Система единой технической поддержки</a></li>
+                        <li><a href="#">Политика безопасности в отношении персональных данных БГУИР</a></li>
+                        <li><a href="#">Правила педагогических работников</a></li>
+                        <li><a href="#">Телефонный справочник</a></li>
+                    </ul>
+                </div>
+                <div class="targetMenu__item">
+                    Студентам
+                    <ul>
+                        <li><span>УЧЕБА</span></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Кафедры</a></li>
+                        <li><a href="#">Факультеты</a></li>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">ЭРУД</a></li>
+                        <li><a href="#">Репозиторий</a></li>
+                        <li><a href="#">Стипендия</a></li>
+                        <li><a href="#">Оплата обучения</a></li>
+                        <li><a href="#">Информация для восстановления</a></li>
+                        <li><a href="#">Стажировка</a></li>
+                        <li><a href="#">Практика</a></li>
+                        <li><a href="#">Центр языковой подготовки</a></li>
+                        <li><span>СТУДЕНЧЕСКОЕ СОУПРАВЛЕНИЕ</span></li>
+                        <li><a href="#">Студенческий совет БГУИР</a></li>
+                        <li><a href="#">Студенческие советы иностранных граждан</a></li>
+                        <li><a href="#">БРСМ БГУИР</a></li>
+                        <li><a href="#">Студенческий профком</a></li>
+                        <li><a href="#">Волонтерский центр</a></li>
+                        <li><span>СТУДЕНЧЕСКИЕ ВОЗМОЖНОСТИ</span></li>
+                        <li><a href="#">Летний отдых</a></li>
+                        <li><a href="#">Студотряды</a></li>
+                        <li><a href="#">Молодежные объединения</a></li>
+                        <li><a href="#">Спорт</a></li>
+                        <li><a href="#">Культурный центр</a></li>
+                        <li><a href="#">Сектор студенческой науки</a></li>
+                        <li><span>СОЦИАЛЬНЫЕ ВОПРОСЫ</span></li>
+                        <li><a href="#">Социальная поддержка</a></li>
+                        <li><a href="#">Студгородок</a></li>
+                        <li><a href="#">СППС</a></li>
+                        <li><span>ДОКУМЕНТЫ</span></li>
+                        <li><a href="#">Шаблоны заявлений</a></li>
+                        <li><a href="#">Приказы</a></li>
+                        <li><a href="#">Выдача архивных справок</a></li>
+                        <li><a href="#">Заказ студенческих справок</a></li>
+                        <li><a href="#">Правила внутреннего распорядка обучающихся</a></li>
+                        <li><span>ИНФОРМАЦИЯ</span></li>
+                        <li><a href="#">Заявка в техподдержку</a></li>
+                        <li><a href="#">Система единой технической поддержки</a></li>
+                        <li><a href="#">Телефонный справочник</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__targetMenu targetMenu--right">
+                <div class="targetMenu__item">
+                    Поступающим
+                    <ul>
+                        <li><a href="#">Для абитуриентов</a></li>
+                        <li><a href="#">Довузовская подготовка</a></li>
+                        <li><a href="#">Специальности</a></li>
+                        <li><a href="#">Заочное обучение</a></li>
+                        <li><a href="#">Дистанционное обучение</a></li>
+                        <li><a href="#">Сокращенное обучение</a></li>
+                        <li><a href="#">Поступление в магистратуру</a></li>
+                        <li><a href="#">Второе высшее</a></li>
+                        <li><a href="#">Поступление в аспирантура</a></li>
+                        <li><a href="#">Повышение квалификации</a></li>
+                        <li><a href="#">Иностранным гражданам</a></li>
+                        <li><a href="#">Абитуриентам Казахстана и стран СНГ</a></li>
+                    </ul>
+                </div>
+                <div class="targetMenu__item">
+                    Выпускникам
+                    <ul>
+                        <li><a href="#">Магистратура</a></li>
+                        <li><a href="#">Аспирантура и докторантура</a></li>
+                        <li><a href="#">Повышение квалификации</a></li>
+                        <li><a href="#">Выдача архивных справок</a></li>
+                    </ul>
+                </div>
+                <div class="targetMenu__item">
+                    Услуги
+                    <ul>
+                        <li><a href="#">Образовательные услуги</a></li>
+                        <li><a href="#">Сертифицированные курсы</a></li>
+                        <li><a href="#">Полиграфические услуги</a></li>
+                        <li><a href="#">Спортзал, бассейн</a></li>
+                        <li><a href="#">СОК "Браславские озера"</a></li>
+                        <li><a href="#">Комбинат питания</a></li>
+                        <li><a href="#">Договор публичной оферты на оказание услуг</a></li>
+                        <li><a href="#">Центр языковой подготовки</a></li>
+                        <li><a href="#">Повышение квалификации</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="searchFieldMobile d-none" id="searchFieldMobile">
+                <input type="text" placeholder="Поиск" class="searchFieldMobile__input">
+                <div class="searchFieldMobile__button">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#search"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__logoText">
+        <a href="./index.html">БГУИР</a>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <div class="breadcrumbs">
+            <a class="breadcrumbs__link" href="#"><span>Главная</span></a>
+        </div>
+        <h1>Жиза БГУИР</h1>
+        <div class="bsuirLife__content">
+            <div class="content__item">
+                <div class="item__video">
+                    <iframe class="video__player" src="https://www.youtube.com/embed/lV0odgAiXfw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video__previewImage">
+                        <img src="./img/bsuirLife/bsuirLife_1.jpg" alt="превью">
+                        <div class="video__playButton">
+                            <svg>
+                                <use xlink:href="./img/sprite.svg#trinagleUp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__text">"Мы беларусы - мірныя людзі": в БГУИР прошёл флэшмоб "Символы Беларуси - символы
+                    мира
+                </div>
+            </div>
+            <div class="content__item">
+                <div class="item__video">
+                    <iframe class="video__player" src="https://www.youtube.com/embed/lV0odgAiXfw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video__previewImage">
+                        <img src="./img/bsuirLife/bsuirLife_2.jpg" alt="превью">
+                        <div class="video__playButton">
+                            <svg>
+                                <use xlink:href="./img/sprite.svg#trinagleUp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__text">Репортаж | Конференции "BIG DATA" и "Инженерное образование в цифровом обществе"
+                    прошли в БГУИР
+                </div>
+            </div>
+            <div class="content__item">
+                <div class="item__video">
+                    <iframe class="video__player" src="https://www.youtube.com/embed/lV0odgAiXfw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video__previewImage">
+                        <img src="./img/bsuirLife/bsuirLife_3.jpg" alt="превью">
+                        <div class="video__playButton">
+                            <svg>
+                                <use xlink:href="./img/sprite.svg#trinagleUp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__text">Студентка БГУИР стала призером чемпионата Республики Беларусь по шашкам</div>
+            </div>
+            <div class="content__item">
+                <div class="item__video">
+                    <iframe class="video__player" src="https://www.youtube.com/embed/lV0odgAiXfw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video__previewImage">
+                        <img src="./img/bsuirLife/bsuirLife_3.jpg" alt="превью">
+                        <div class="video__playButton">
+                            <svg>
+                                <use xlink:href="./img/sprite.svg#trinagleUp"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__text">Студентка БГУИР стала призером чемпионата Республики Беларусь по шашкам</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <a сlass="button .button--pink" href="https://www.youtube.com/@videostudiabsuir/videos">Перейти на канал</a>
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__socialMedia">
+                <a href="#" class="socialMedia__link link--instagram">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#instagram"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socialMedia__link link--vk">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#vk"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socialMedia__link link--youtube">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#youtube"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socialMedia__link link--facebook">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#facebook"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socialMedia__link link--telegram">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socialMedia__link link--tiktok">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#tiktok"></use>
+                    </svg>
+                </a>
+                <a href="#" class="socialMedia__link link--webmail">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#webmail"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="footer__contactUs">
+                <svg>
+                    <use xlink:href="./img/sprite.svg#webmail"></use>
+                </svg>
+                <span>Связаться с нами</span>
+            </a>
+        </div>
+        <div class="footer__menu">
+            <ul class="menu__list list--levelOne" id="footerMenu">
+                <li class="menu__item item--levelOne">
+                    <div class="d-flex align-items-center">Полезные ресурсы
+                        <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                        </svg>
+                    </div>
+                    <ul class="menu__list list--levelTwo">
+                        <li class="menu__item item--levelTwo"><a href="#">Президент Республики Беларусь</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Конференция Big Data</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Министерство образования Республики
+                            Беларусь</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Правовой форум Беларуси</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Абитуриент.by</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Качество услуг.бел</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Госстандарт</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Study in Belarus</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Export.by</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item item--levelOne">
+                    <div class="d-flex align-items-center">Подразделения БГУИР
+                        <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                        </svg>
+                    </div>
+                    <ul class="menu__list list--levelTwo">
+                        <li class="menu__item item--levelTwo"><a href="#">ИИТ БГУИР</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Филиал "Мниский радиотехнический колледж"</a>
+                        </li>
+                        <li class="menu__item item--levelTwo"><a href="#">Библиотека</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Профком работников БГУИР</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Центр кадровой работы</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Совет молодых ученых</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Научно-технологический парк</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Журнал "Доклады БГУИР"</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Газета "Импульс"</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">ОП БГУИР Комбинат питания</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item item--levelOne">
+                    <div class="d-flex align-items-center">Тематические сайты
+                        <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                        </svg>
+                    </div>
+                    <ul class="menu__list list--levelTwo">
+                        <li class="menu__item item--levelTwo"><a href="#">Система технической поддержки БГУИР</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">VHDL - обучающий портал</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">ЭРУД (ЭУМКД)</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Оценка удовлетворённости потребителей</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Виртуальный музей</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Учебно-методическое объединение</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">DUALBEL</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item item--levelOne">
+                    <div class="d-flex align-items-center">Конференции и олимпиады
+                        <svg class="ml-2" width="10" height="10" fill="none" stroke="#FFFFFF" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round">
+                            <use xlink:href="./img/sprite.svg#arrowDown"></use>
+                        </svg>
+                    </div>
+                    <ul class="menu__list list--levelTwo">
+                        <li class="menu__item item--levelTwo"><a href="#">ИИТ БГУИР</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Филиал "Мниский радиотехнический колледж"</a>
+                        </li>
+                        <li class="menu__item item--levelTwo"><a href="#">Библиотека</a></li>
+                        <li class="menu__item item--levelTwo"><a href="#">Профком работников БГУИР</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__addressAndBuildings">
+                <div class="footer__address">Республика Беларусь, Минск<br>220013, ул. П. Бровки, 6</div>
+                <a href="#" class="footer__buildings">
+                    <svg fill="#FFFFFF">
+                        <use xlink:href="./img/sprite.svg#mapPin"></use>
+                    </svg>
+                    <span>Схема корпусов</span>
+                </a>
+            </div>
+            <div class="footer__logo">
+                <div class="footer__logoImage">
+                    <img src="./img/logo.png" alt="Логотип БГУИР">
+                </div>
+                <div class="footer__logoText">Белорусский Государственный<br>Университет Информатики и<br>Радиоэлектроники
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">© ЦИИР БГУИР, 2002-2024</div>
+    </div>
+</footer>
+<div id="scrollTopButton" class="scrollTopButton" style="opacity: 0; visibility: hidden;">
+    <svg>
+        <use xlink:href="./img/sprite.svg#trinagleUp"></use>
+    </svg>
+</div>
+<script src="./js/burger.js"></script>
+<script src="./js/searchFieldPC.js"></script>
+<script src="./js/searchFieldMobile.js"></script>
+<script defer src="./js/simple-adaptive-slider.js"></script>
+<script src="./js/targetMenu.js"></script>
+<script src="./js/videoPlayer.js"></script>
+<script src="./js/adaptive-accordion-slider.js"></script>
+<script src="./js/footer.js"></script>
+<script src="./js/scrollTopButton.js"></script>
+</body>
+
+</html>
