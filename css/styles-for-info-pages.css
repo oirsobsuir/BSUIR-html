@@ -75,6 +75,10 @@
     object-fit: cover;
 }
 
+.person__info {
+    width: 100%;
+}
+
 a.person__name {
     font-size: 40px;
     font-weight: 700;
@@ -88,7 +92,11 @@ a.person__name {
 .person__contacts {
     margin: 35px 0 0 0;
     display: flex;
-    gap: 0 60px;
+    gap: 0 5.44%;
+}
+
+.contacts__block {
+    flex: 0 0 47.28%;
 }
 
 .person:first-child .person__info {
