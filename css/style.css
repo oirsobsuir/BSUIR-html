@@ -131,8 +131,59 @@ strong {
     color: #2A6D98;
 }
 
+.button {
+    display: inline-block;
+    min-width: 8.333rem;
+    padding: 0.708rem 1.666rem 0.75rem;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 0.083rem;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 150ms;
+}
+
+.button--ltblue {
+    background-color: #2F72A8;
+}
+
+.button--ltblue:hover {
+    background-color: #BD4559;
+}
+
+.button--ltblue:active {
+    background-color: #1E5F94;
+}
+
+.button--blue {
+    background-color: #013767;
+}
+
+.button--blue:hover {
+    background-color: #930018;
+}
+
+.button--blue:active {
+    background-color: #002F58;
+}
+
+.button--pink {
+    background-color: #BD4559;
+}
+
+.button--pink:hover {
+    background-color: #2F72A8;
+}
+
+.button--pink:active {
+    background-color: #930018;
+}
 
 
+
+/* body goes here */
 body {
     position: relative;
     display: flex;

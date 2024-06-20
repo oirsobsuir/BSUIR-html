@@ -162,7 +162,8 @@
     counter-increment: slide;
 }
 
-.itcss__item>a {
+.itcss__item>a,
+.itcss__item>span {
     display: flex;
     align-items: center;
     justify-content: center;
