@@ -75,10 +75,6 @@
     object-fit: cover;
 }
 
-.person__info {
-    font-size: 24px;
-}
-
 a.person__name {
     font-size: 40px;
     font-weight: 700;
@@ -93,11 +89,6 @@ a.person__name {
     margin: 35px 0 0 0;
     display: flex;
     gap: 0 60px;
-}
-
-.contacts__byAppointment {
-    font-weight: 700;
-    color: #2A6D98;
 }
 
 .person:first-child .person__info {
@@ -145,10 +136,6 @@ a.person__name {
     .person__image {
         flex: 0 0 44%;
         height: 250px;
-    }
-
-    .person__info {
-        font-size: 16px;
     }
 
     .person__contacts {
