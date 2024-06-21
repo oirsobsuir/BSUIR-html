@@ -197,8 +197,10 @@ body {
 
 .header {
     position: relative;
+    top: 0;
     z-index: 10;
     color: #FFFFFF;
+    transition: top 150ms;
 }
 
 .burger__wrapper {
@@ -374,13 +376,112 @@ body {
     display: none;
 }
 
+.forVisuallyImpaired {
+    padding: 0.625rem 1.25rem;
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.625rem 4.25rem;
+    font-size: 1.083rem;
+    color: #000000;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.forVisuallyImpaired--open {
+    display: flex;
+}
+
+.forVisuallyImpaired__fontSize,
+.forVisuallyImpaired__colorTheme,
+.forVisuallyImpaired__images {
+    display: flex;
+    align-items: center;
+    gap: 0 0.416rem;
+}
+
+.forVisuallyImpaired__fontSize span,
+.forVisuallyImpaired__colorTheme span,
+.forVisuallyImpaired__images span {
+    margin: 0 0.208rem 0 0;
+    white-space: nowrap;
+}
+
+.fontSize__button {
+    line-height: 1.666rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fontSize__button:hover {
+    text-decoration: underline;
+}
+
+.fontSize__button--small {
+    font-size: 0.792rem;
+}
+
+.fontSize__button--big {
+    font-size: 1.416rem;
+}
+
+.colorTheme__button,
+.images__button {
+    height: 1.333rem;
+    width: 1.333rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.917rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0.042rem solid #000000;
+    cursor: pointer;
+    user-select: none;
+}
+
+.colorTheme__button--dark {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.colorTheme__button:hover,
+.images__button:hover {
+    box-shadow: 0 0 0 0.208rem #F3A1AF;
+}
+
+.images__button {
+    width: 1.583rem;
+}
+
+.images__button--none {
+    position: relative;
+}
+
+.images__button--none::before,
+.images__button--none::after {
+    content: "";
+    position: absolute;
+    height: 158%;
+    width: 0.083rem;
+    background-color: #E00433;
+}
+
+.images__button--none::before {
+    transform: rotate(50.5deg);
+}
+
+.images__button--none::after {
+    transform: rotate(-50.5deg);
+}
+
 .header__wrapper {
     width: 100%;
     position: fixed;
     background-color: #013767;
 }
 
-.header__wrapper .container {
+.header__wrapper .container:last-child {
     padding: 12px 10px 5px;
     display: grid;
     /* Ширина блока с логотипом задаётся через calc() для его плавного сжатия от 295px в @1920 до 160px в @1200px */
@@ -449,10 +550,24 @@ body {
     display: block;
 }
 
+.item--visuallyImpaired {
+    position: relative;
+}
+
 .item--visuallyImpaired svg {
     width: 30px;
     height: 100%;
     fill: #FFFFFF;
+}
+
+.item--visuallyImpaired.item--open::after {
+    content: "";
+    height: 41px;
+    width: 3px;
+    position: absolute;
+    background-color: #fff;
+    transform: rotate(-55deg);
+    border-radius: 2px;
 }
 
 .controls--right {
@@ -1152,7 +1267,7 @@ body {
         font-size: 18px;
     }
 
-    .header__wrapper .container {
+    .header__wrapper .container:last-child {
         padding: 12px 5px 0;
         /* Ширина блока с логотипом задаётся через calc() для его плавного сжатия от 510px в @1200px до 330px в @768px */
         grid-template-columns: 1fr calc(13.888% - 17px) 1fr;
@@ -1177,6 +1292,10 @@ body {
 
     .item--visuallyImpaired svg {
         width: 24px;
+    }
+
+    .item--visuallyImpaired.item--open::after {
+        height: 33px;
     }
 
     .item--search svg {
@@ -1611,7 +1730,7 @@ body {
         display: block;
     }
 
-    .header__wrapper .container {
+    .header__wrapper .container:last-child {
         padding: 0 10px 8px;
         grid-template-columns: 1fr 50px 1fr;
     }

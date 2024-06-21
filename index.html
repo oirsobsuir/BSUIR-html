@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="burger__wrapper" id="burgerWrapper" style="left:-101vw">
             <div class="container">
                 <svg class="burger__closeButton" id="burgerClose">
@@ -364,6 +364,27 @@
         </div>
         <div class="header__wrapper">
             <div class="container">
+                <div class="forVisuallyImpaired" id="forVisuallyImpaired">
+                    <div class="forVisuallyImpaired__fontSize">
+                        <span>Размер шрифта:</span>
+                        <div class="fontSize__button fontSize__button--small" id="fontSize__button--small">А</div>
+                        <div class="fontSize__button fontSize__button--medium" id="fontSize__button--medium">А</div>
+                        <div class="fontSize__button fontSize__button--big" id="fontSize__button--big">А</div>
+                    </div>
+                    <div class="forVisuallyImpaired__colorTheme">
+                        <span>Цвет сайта:</span>
+                        <div class="colorTheme__button colorTheme__button--light" id="colorTheme__button--light">Ц</div>
+                        <div class="colorTheme__button colorTheme__button--dark" id="colorTheme__button--dark">Ц</div>
+                    </div>
+                    <div class="forVisuallyImpaired__images">
+                        <span>Изображения:</span>
+                        <div class="images__button images__button--colored" id="images__button--colored">ЦВ</div>
+                        <div class="images__button images__button--blackWhite" id="images__button--blackWhite">ЧБ</div>
+                        <div class="images__button images__button--none" id="images__button--none"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
                 <div class="header__controls controls--left">
                     <div class="controls__item item--burgerMenu" id="burgerOpen">
                         <svg>
@@ -380,9 +401,9 @@
                             <li><a href="#">CHI</a></li>
                         </ul>
                     </div>
-                    <div class="controls__item item--visuallyImpaired item--PC">
+                    <div class="controls__item item--visuallyImpaired item--PC" id="visuallyImpaired_PC">
                         <svg>
-                            <use xlink:href="./img/sprite.svg#visuallyImpaired_open"></use>
+                            <use xlink:href="./img/sprite.svg#visuallyImpaired"></use>
                         </svg>
                     </div>
                 </div>
@@ -390,9 +411,9 @@
                     <img src="./img/logo.png" alt="Логотип БГУИР">
                 </a>
                 <div class="header__controls controls--right">
-                    <div class="controls__item item--visuallyImpaired item--Mobile">
+                    <div class="controls__item item--visuallyImpaired item--Mobile" id="visuallyImpaired_Mobile">
                         <svg>
-                            <use xlink:href="./img/sprite.svg#visuallyImpaired_open"></use>
+                            <use xlink:href="./img/sprite.svg#visuallyImpaired"></use>
                         </svg>
                     </div>
                     <div class="controls__item item--search item--PC" id="item--search--PC">
@@ -1023,6 +1044,7 @@
         </svg>
     </div>
     <script src="./js/burger.js"></script>
+    <script src="./js/visuallyImpaired.js"></script>
     <script src="./js/searchFieldPC.js"></script>
     <script src="./js/searchFieldMobile.js"></script>
     <script defer src="./js/simple-adaptive-slider.js"></script>
