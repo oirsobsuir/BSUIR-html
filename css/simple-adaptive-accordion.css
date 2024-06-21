@@ -36,7 +36,7 @@
 }
 
 .accordionSlider__slide.slide--selected .slide__text {
-    padding: 0 0 100px 0;
+    padding: 0 0 4rem 0;
     font-size: 48px;
     line-height: 62px;
     text-align: center;
@@ -48,17 +48,11 @@
     position: absolute;
     left: 25px;
     bottom: 25px;
-    font-size: 32px;
-    line-height: 40px;
     display: none;
 }
 
 .accordionSlider__slide.slide--selected .slide__link {
     display: block;
-}
-
-.accordionSlider__slide .slide__link:hover {
-    text-decoration: underline;
 }
 
 @media screen and (max-width: 1199px) {
@@ -78,7 +72,6 @@
     }
 
     .accordionSlider__slide.slide--selected .slide__text {
-        padding: 0 0 50px 0;
         font-size: 20px;
         line-height: 26px;
     }
@@ -113,7 +106,6 @@
     }
 
     .accordionSlider__slide.slide--selected .slide__text {
-        padding: 0 0 50px 15px;
         align-self: end;
         font-size: 16px;
         line-height: 20px;
