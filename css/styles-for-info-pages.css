@@ -1,5 +1,5 @@
 .main .container {
-    padding: 45px 75px 170px;
+    padding: 45px 75px 120px;
 }
 
 .persons__h2 {
@@ -117,7 +117,7 @@ a.person__name {
 
 @media screen and (max-width: 1199px) {
     .main .container {
-        padding: 20px 20px 90px;
+        padding: 20px 20px 50px;
     }
 
     .persons__h2 {
@@ -170,7 +170,7 @@ a.person__name {
 
 @media screen and (max-width: 767px) {
     .main .container {
-        padding: 15px 15px 60px;
+        padding: 15px 15px 30px;
     }
 
     .breadcrumbs {
