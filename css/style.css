@@ -372,10 +372,6 @@ body {
     color: #E06A7E;
 }
 
-.burgerMenu--Mobile {
-    display: none;
-}
-
 .forVisuallyImpaired {
     padding: 0.625rem 1.25rem;
     display: none;
@@ -622,6 +618,10 @@ body {
     display: none;
 }
 
+.burger__wrapper .header__targetMenu {
+    display: none;
+}
+
 .header__targetMenu {
     /* Ширина блока с целевым меню задаётся через calc() для его плавного сжатия от 635px в @1920 до 510px в @1200px */
     width: calc(42.735% + 292px);
@@ -649,10 +649,15 @@ body {
     background-color: #FFFFFF;
 }
 
+.targetMenu__item>span {
+    display: flex;
+    gap: 0 14px;
+    align-items: center;
+}
+
 .targetMenu__item svg {
     width: 16px;
     height: 21px;
-    margin: 0 0 0 14px;
     fill: #FFFFFF;
 }
 
@@ -722,11 +727,11 @@ body {
 
 .targetMenu__item li:has(span) {
     padding: 20px 22px 20px;
+    color: #B8374E;
 }
 
 .targetMenu__item span {
     font-weight: 700;
-    color: #B8374E;
 }
 
 .targetMenu__item:hover ul {
@@ -858,7 +863,7 @@ body {
 
 .news__content .item__date {
     font-size: 20px;
-    line-height: 26px;
+    line-height: 30px;
 }
 
 .news__content .item__link {
@@ -1327,10 +1332,13 @@ body {
         padding: 10px 8px 20px;
     }
 
+    .targetMenu__item>span {
+        gap: 0 10px;
+    }
+
     .targetMenu__item svg {
         width: 12px;
         height: 16px;
-        margin: 0 0 0 10px;
     }
 
     .targetMenu__item ul {
@@ -1353,6 +1361,7 @@ body {
 
     .targetMenu__item li:has(span) {
         padding: 20px 10px 15px;
+        color: #B8374E;
     }
 
     .header__logoImage {
@@ -1655,6 +1664,7 @@ body {
     }
 
     .burger__top {
+        margin: 0 0 15px 0;
         flex-direction: column-reverse;
         align-items: start;
     }
@@ -1680,54 +1690,6 @@ body {
 
     .burgerMenu--PC {
         display: none;
-    }
-
-    .burgerMenu--Mobile {
-        display: block;
-    }
-
-    .burgerMenu--Mobile .list--levelTwo {
-        height: 0;
-        overflow: hidden;
-    }
-
-    .burgerMenu--Mobile .item--levelOne.item--expanded .list--levelTwo {
-        height: unset;
-        margin: 6px 0 0 0;
-    }
-
-    .burgerMenu--Mobile .item--levelOne {
-        padding: 6px 0;
-        font-size: 20px;
-        line-height: 24px;
-        cursor: pointer;
-    }
-
-    .burgerMenu--Mobile .item--levelOne svg {
-        transition: transform 300ms;
-    }
-
-    .burgerMenu--Mobile .item--levelOne.item--expanded svg:last-child {
-        transform: rotateX(180deg);
-    }
-
-    .burgerMenu--Mobile .item--levelTwo {
-        margin: 10px 0 5px 0;
-        font-size: 20px;
-        line-height: 24px;
-        color: #BC4559;
-    }
-
-    .burgerMenu--Mobile .item--levelThree {
-        padding: 10px 0;
-        font-size: 18px;
-        line-height: 22px;
-        font-weight: 400;
-        color: #FFFFFF;
-    }
-
-    .burgerMenu--Mobile .item--levelThree a {
-        display: block;
     }
 
     .header__wrapper .container:last-child {
@@ -1795,8 +1757,105 @@ body {
         fill: #013767;
     }
 
-    .header__targetMenu {
+    .burger__wrapper .header__targetMenu {
+        display: flex;
+    }
+
+    .header__wrapper .header__targetMenu {
         display: none;
+    }
+
+    .header__targetMenu {
+        /* Ширина блока с целевым меню задаётся через calc() для его плавного сжатия от 635px в @1920 до 510px в @1200px */
+        width: unset;
+        margin: 0;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .targetMenu--left {
+        justify-self: unset;
+    }
+
+    .targetMenu__item {
+        position: static;
+        padding: 6px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-radius: 0;
+        background-color: unset;
+    }
+
+    .targetMenu__item:hover {
+        color: unset;
+        background-color: unset;
+    }
+
+    .targetMenu__item svg {
+        width: 12px;
+        height: 16px;
+        margin: 0 0 3px 0;
+        fill: #FFFFFF;
+    }
+
+    .targetMenu__item:hover svg {
+        fill: #FFFFFF;
+    }
+
+    .targetMenu__item>span::after {
+        content: "";
+        min-height: 20px;
+        min-width: 20px;
+        background: url(../img/sprite.svg#arrowDown) center center no-repeat;
+        background-size: cover;
+    }
+
+    .targetMenu__item ul {
+        max-width: unset;
+        max-height: 0;
+        padding: 0;
+        position: static;
+        top: unset;
+        z-index: unset;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: unset;
+        overflow: hidden;
+        visibility: visible;
+        opacity: 1;
+        transition: all 150ms;
+    }
+
+    .targetMenu--left .targetMenu__item ul,
+    .targetMenu--right .targetMenu__item ul {
+        margin: 0;
+        left: unset;
+        right: unset;
+        border-radius: 0;
+    }
+
+    .targetMenu__item li {
+        padding: 4px 0;
+        text-transform: none;
+        width: unset;
+    }
+
+    .targetMenu__item li:has(span):first-child,
+    .targetMenu__item li:has(span) {
+        padding: 5px 0;
+        font-size: 20px;
+        color: #B8374E;
+    }
+
+    .targetMenu__item span {
+        font-weight: 700;
+    }
+
+    .targetMenu__item:hover ul {
+        max-height: unset;
+        padding: 15px 0;
     }
 
     .header__logoImage {

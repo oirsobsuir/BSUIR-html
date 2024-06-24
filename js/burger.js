@@ -36,12 +36,3 @@ for (let list of lists) {
         list.scrollLeft += e.deltaY;
     })
 }
-
-// Burger menu Mobile
-const burgerMenuMobile = document.getElementById('burgerMenuMobile');
-const levelOneItemsMobile = burgerMenuMobile.getElementsByClassName('item--levelOne');
-for (let levelOneItemMobile of levelOneItemsMobile) {
-    levelOneItemMobile.addEventListener('click', () => {
-        levelOneItemMobile.classList.toggle('item--expanded');
-    })
-}
