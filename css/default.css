@@ -2,8 +2,10 @@
     --spacer: 1rem;
     --multiply-index: 0.25;
     --bright-red: #f00;
-    --dark-red: #842029; /*error message*/
-    --light-red: #f8d7da; /*error background*/
+    /*error message*/
+    --dark-red: #842029;
+    /*error background*/
+    --light-red: #f8d7da;
     --form-input-text: #495057;
     --white: #fff;
     --form-border: #ced4da;
@@ -537,7 +539,7 @@
     display: none;
 }
 
-.password-checkbox ~ span {
+.password-checkbox~span {
     background-image: url("../css/img/view.svg");
     background-repeat: no-repeat;
     display: block;
@@ -545,7 +547,7 @@
     height: 100%;
 }
 
-.password-checkbox:checked ~ span {
+.password-checkbox:checked~span {
     background-image: url("../css/img/no-view.svg");
     background-repeat: no-repeat;
 }
@@ -614,7 +616,10 @@
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-[type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner, button::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
     padding: 0;
     border-style: none;
 }
@@ -623,7 +628,8 @@
     cursor: pointer;
 }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
     outline: 0;
     box-shadow: 0 0 0 .2rem var(--button-focus);
 }
@@ -640,17 +646,20 @@
     border-color: var(--border-button-hover) #0062cc;
 }
 
-.btn-primary.focus, .btn-primary:focus {
+.btn-primary.focus,
+.btn-primary:focus {
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5);
 }
 
-.btn-primary.disabled, .btn-primary:disabled {
+.btn-primary.disabled,
+.btn-primary:disabled {
     color: var(--white);
     background-color: var(--background-button);
     border-color: var(--background-button);
 }
 
-.btn.disabled, .btn:disabled {
+.btn.disabled,
+.btn:disabled {
     opacity: .65;
 }
 
@@ -664,7 +673,8 @@
     border-color: var(--background-button-secondary);
 }
 
-.btn-secondary.focus, .btn-secondary:focus {
+.btn-secondary.focus,
+.btn-secondary:focus {
     box-shadow: 0 0 0 .2rem var(--shadow);
 }
 
@@ -681,7 +691,8 @@
 }
 
 
-.btn-delete.focus, .btn-delete:focus {
+.btn-delete.focus,
+.btn-delete:focus {
     box-shadow: 0 0 0 .2rem var(--shadow);
 }
 
@@ -809,7 +820,7 @@
     }
 
     .form-control {
-        padding: 0.2rem 0.35rem;;
+        padding: 0.2rem 0.35rem;
     }
 
     .data-container,
@@ -822,7 +833,8 @@
     }
 
     .file-name-field {
-        width: calc(100% - 40px - 0.4rem); /*????? ??? ?????? ???????? ?????*/
+        width: calc(100% - 40px - 0.4rem);
+        /*????? ??? ?????? ???????? ?????*/
     }
 
     .label-form {
@@ -850,6 +862,7 @@
 }
 
 @media (max-width: 576px) {
+
     /*flex*/
     .flex-basis-33-sm {
         flex-basis: 50%;
@@ -868,12 +881,13 @@
     color: var(--black);
 }
 
-.pagination > div {
+.pagination>div {
     min-width: 1.75rem;
     text-align: center;
 }
 
-.pagination-prev, .pagination-next {
+.pagination-prev,
+.pagination-next {
     padding: 0 0.25rem;
 }
 
