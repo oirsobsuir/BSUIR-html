@@ -24,7 +24,7 @@
     flex: 1 1 300%;
 }
 
-.accordionSlider__slide .slide__text {
+.slide__text {
     padding: 50px 0 0 0;
     max-height: 50%;
     font-size: 40px;
@@ -35,11 +35,11 @@
     cursor: default;
 }
 
-.accordionSlider__slide.slide--selected .slide__text {
+.slide--selected .slide__text {
     padding: 0 0 4rem 0;
     font-size: 48px;
     line-height: 62px;
-    text-align: center;
+   /* text-align: center;*/
     writing-mode: horizontal-tb;
     transform: rotate(0);
 }
@@ -65,13 +65,13 @@
         border: 5px solid #FFFFFF;
     }
 
-    .accordionSlider__slide .slide__text {
+     .slide__text {
         padding: 25px 0 0 0;
         font-size: 21px;
         line-height: 27px;
     }
 
-    .accordionSlider__slide.slide--selected .slide__text {
+    .slide--selected .slide__text {
         font-size: 20px;
         line-height: 26px;
     }
@@ -97,7 +97,7 @@
         border: 3px solid #FFFFFF;
     }
 
-    .accordionSlider__slide .slide__text {
+     .slide__text {
         padding: 0 0 0 15px;
         font-size: 18px;
         line-height: 23px;
@@ -105,7 +105,7 @@
         transform: rotate(0);
     }
 
-    .accordionSlider__slide.slide--selected .slide__text {
+    .slide--selected .slide__text {
         align-self: end;
         font-size: 16px;
         line-height: 20px;
