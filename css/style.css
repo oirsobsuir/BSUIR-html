@@ -655,10 +655,14 @@ body {
     align-items: center;
 }
 
-.targetMenu__item svg {
+.targetMenu__item .svg--login {
     width: 16px;
     height: 21px;
     fill: #FFFFFF;
+}
+
+.svg--arrowDown {
+    display: none;
 }
 
 .targetMenu__item:hover svg {
@@ -1089,21 +1093,23 @@ body {
     fill: #FFFFFF;
 }
 
-.footer__menu .list--levelOne {
+.footer__menu {
     display: flex;
     gap: 2%;
     font-weight: 700;
 }
 
-.footer__menu .item--levelOne {
+.footer__menu .list--levelOne {
     width: 23.5%;
     font-size: 32px;
     line-height: 36px;
     color: #EF5B73;
 }
 
-.footer__menu .item--levelOne svg {
-    display: none;
+.footer__menu .item--levelOne {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
 }
 
 .footer__menu .list--levelTwo {
@@ -1336,7 +1342,7 @@ body {
         gap: 0 10px;
     }
 
-    .targetMenu__item svg {
+    .targetMenu__item .svg--login {
         width: 12px;
         height: 16px;
     }
@@ -1570,12 +1576,12 @@ body {
         width: 22px;
     }
 
-    .footer__menu .list--levelOne {
+    .footer__menu {
         flex-wrap: wrap;
         gap: 30px 5%;
     }
 
-    .footer__menu .item--levelOne {
+    .footer__menu .list--levelOne {
         width: 47.5%;
         font-size: 22px;
         line-height: 26px;
@@ -1771,7 +1777,7 @@ body {
         margin: 0;
         flex-direction: column;
         justify-content: start;
-        align-items: start;
+        align-items: stretch;
     }
 
     .targetMenu--left {
@@ -1792,23 +1798,27 @@ body {
         background-color: unset;
     }
 
-    .targetMenu__item svg {
+    .targetMenu__item .svg--login {
         width: 12px;
         height: 16px;
         margin: 0 0 3px 0;
         fill: #FFFFFF;
     }
 
+    .svg--arrowDown {
+        width: 10px;
+        height: 6px;
+        display: block;
+        stroke: #FFFFFF;
+        transition: transform 150ms;
+    }
+
     .targetMenu__item:hover svg {
         fill: #FFFFFF;
     }
 
-    .targetMenu__item>span::after {
-        content: "";
-        min-height: 20px;
-        min-width: 20px;
-        background: url(../img/sprite.svg#arrowDown) center center no-repeat;
-        background-size: cover;
+    .targetMenu__item:hover .svg--arrowDown {
+        transform: rotateX(-180deg);
     }
 
     .targetMenu__item ul {
@@ -1975,14 +1985,14 @@ body {
         width: 20px;
     }
 
-    .footer__menu .list--levelOne {
+    .footer__menu {
         display: flex;
         flex-direction: column;
         font-weight: 700;
         gap: 0;
     }
 
-    .footer__menu .item--levelOne {
+    .footer__menu .list--levelOne {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1990,9 +2000,9 @@ body {
         line-height: 24px;
     }
 
-    .footer__menu .item--levelOne svg {
+    .footer__menu .svg--arrowDown {
         display: block;
-        transition: transform 300ms;
+        stroke: #EF5B73;
     }
 
     .footer__menu .list--levelTwo {
@@ -2000,11 +2010,11 @@ body {
         margin: 10px 0;
     }
 
-    .footer__menu .item--levelOne.item--expanded .list--levelTwo {
+    .footer__menu .list--levelOne.item--expanded .list--levelTwo {
         height: unset;
     }
 
-    .footer__menu .item--levelOne.item--expanded svg {
+    .footer__menu .list--levelOne.item--expanded svg {
         transform: rotateX(180deg);
     }
 
