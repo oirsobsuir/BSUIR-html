@@ -82,11 +82,8 @@
 
 
 :root {
-    --base-font-size: 24px;
-    --medium-font-size: 28px;
-    --big-font-size: 32px;
     font-family: 'PT-Sans', sans-serif;
-    font-size: var(--base-font-size);
+    font-size: 24px;
     line-height: 1.15;
 }
 
@@ -129,6 +126,14 @@ h5 {
     color: #013767;
 }
 
+.main a {
+    color: #0A3470;
+}
+
+.main a:hover {
+    text-decoration: underline;
+}
+
 strong {
     font-weight: 700;
     color: #2A6D98;
@@ -146,6 +151,14 @@ strong {
     user-select: none;
     cursor: pointer;
     transition: background-color 300ms;
+}
+
+.main a.button {
+    color: #FFFFFF;
+}
+
+.main a.button:hover {
+    text-decoration: none;
 }
 
 .button--ltblue {
@@ -323,9 +336,9 @@ body {
 }
 
 .burgerMenu--PC .list--levelOne {
-    padding: 0 50px 0 0;
-    min-width: 360px;
-    max-width: 360px;
+    padding: 0 2rem 0 0;
+    min-width: 15rem;
+    max-width: 15rem;
     gap: 30px;
     overflow-y: auto;
 }
@@ -344,16 +357,15 @@ body {
 
 .burgerMenu--PC .item--levelOne {
     font-family: 'MADE Evolve Sans EVO', sans-serif;
-    font-size: 42px;
-    line-height: 42px;
+    font-size: 1.75rem;
+    line-height: 1;
     font-weight: 500;
 }
 
 .burgerMenu--PC .item--levelTwo {
-    width: 360px;
+    width: 15rem;
     margin: 0 50px;
-    font-size: 25px;
-    line-height: 25px;
+    line-height: 1;
 }
 
 .burgerMenu--PC .burgerMenu__item:hover,
@@ -363,11 +375,11 @@ body {
 }
 
 .burgerMenu--PC .item--levelThree {
-    width: 360px;
+    width: 15rem;
     margin: 0 50px;
     padding: 0 0 0 30px;
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 0.916rem;
+    line-height: 1;
 }
 
 .burgerMenu--PC .item--selected {
@@ -796,20 +808,18 @@ body {
 .showMore {
     margin: 40px 0 0 0;
     display: inline-flex;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 1.333rem;
     font-weight: 700;
     color: #0A3470;
 }
 
 .showMore .waves {
-    width: 26px;
-    margin: 0 0 -2px 15px;
+    width: 1.083rem;
+    margin: 0 0 -0.083rem 0.625rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 0.916rem;
     color: #AD0D28;
 }
 
@@ -828,6 +838,10 @@ body {
 
 .showMore .wave:nth-child(3) {
     transition-delay: 200ms;
+}
+
+a.showMore:hover {
+    text-decoration: none;
 }
 
 .showMore:hover .wave {
@@ -867,30 +881,21 @@ body {
 
 .news__content .item__type {
     margin: 0 20px 0 0;
-    font-size: 24px;
-    line-height: 30px;
     font-weight: 700;
     color: #AD0D28;
 }
 
 .news__content .item__date {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 0.833rem;
 }
 
 .news__content .item__link {
-    height: 60px;
+    height: 2.3rem;
     margin: 10px 0 0 0;
     display: block;
-    font-size: 24px;
-    line-height: 30px;
     font-weight: 700;
     color: #013767;
     overflow: hidden;
-}
-
-.news__content .item__link:hover {
-    text-decoration: underline;
 }
 
 .events {
@@ -917,27 +922,19 @@ body {
 }
 
 .events__content .date__month {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 0.833rem;
     font-weight: 700;
     color: #013767;
 }
 
 .events__content .date__day {
-    font-size: 48px;
-    line-height: 52px;
+    font-size: 2rem;
     font-weight: 700;
     color: #013767;
 }
 
 .events__content .item__link {
-    font-size: 24px;
-    line-height: 30px;
-    overflow: hidden;
-}
-
-.events__content .item__link:hover {
-    text-decoration: underline;
+    color: #000000;
 }
 
 .ads__content {
@@ -952,27 +949,18 @@ body {
 
 .ads__content .item__date {
     margin: 0 0 15px 0;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 0.833rem;
     color: #3E3E3E;
 }
 
 .ads__content .item__link {
     margin: 0 0 15px 0;
     display: block;
-    font-size: 24px;
-    line-height: 30px;
     font-weight: 700;
     color: #013767;
 }
 
-.ads__content .item__link:hover {
-    text-decoration: underline;
-}
-
 .ads__content .item__text {
-    font-size: 24px;
-    line-height: 30px;
     font-weight: 700;
 }
 
@@ -1043,10 +1031,8 @@ body {
 }
 
 .bsuirLife__content .item__text {
-    font-size: 1rem;
-    line-height: 1.25;
     font-weight: 700;
-    max-height: 2.5rem;
+    max-height: 2.3rem;
     overflow: hidden;
     -webkit-line-clamp: 2;
     display: -webkit-box;
@@ -1089,14 +1075,12 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
-    font-size: 24px;
-    line-height: 31px;
     font-weight: 700;
     background-color: #BD4559;
 }
 
 .footer__contactUs svg {
-    width: 32px;
+    width: 1.333rem;
     height: 100%;
     fill: #FFFFFF;
 }
@@ -1109,8 +1093,7 @@ body {
 
 .footer__menu .list--levelOne {
     width: 23.5%;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 1.333rem;
     color: #EF5B73;
 }
 
@@ -1131,8 +1114,8 @@ body {
 }
 
 .footer__menu .item--levelTwo {
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 1.083rem;
+    line-height: 1;
 }
 
 .footer__menu .item--levelTwo a:hover {
@@ -1150,11 +1133,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.footer__address {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 0.833rem;
     font-weight: 700;
 }
 
@@ -1165,15 +1144,12 @@ body {
 }
 
 .footer__buildings span {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
     text-decoration: underline;
 }
 
 .footer__buildings svg {
-    width: 16px;
-    height: 22px;
+    width: 0.666rem;
+    height: 0.916rem;
 }
 
 .footer__logo {
@@ -1183,25 +1159,24 @@ body {
 }
 
 .footer__logoImage {
-    margin: 0 15px 0 0;
-    padding: 0 15px 0 0;
-    border-right: 3px solid #BD4559;
+    margin: 0 0.666rem 0 0;
+    padding: 0 0.666rem 0 0;
+    border-right: 0.125rem solid #BD4559;
 }
 
 .footer__logoImage img {
-    width: 125px;
+    width: 5.2rem;
 }
 
 .footer__logoText {
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 1.083rem;
+    line-height: 1;
     font-weight: 700;
 }
 
 .footer__copyright {
     margin: 15px 150px 0 0;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 0.833rem;
     text-align: right;
 }
 
@@ -1236,9 +1211,7 @@ body {
 
 @media screen and (max-width: 1199px) {
     :root {
-        --base-font-size: 20px;
-        --medium-font-size: 23px;
-        --big-font-size: 26px;
+        font-size: 20px;
     }
 
     .burger__wrapper {
@@ -1259,8 +1232,8 @@ body {
 
     .burgerMenu--PC .list--levelOne {
         padding: 0 30px 0 0;
-        min-width: 260px;
-        max-width: 260px;
+        min-width: 13rem;
+        max-width: 13rem;
     }
 
     .burgerMenu--PC .list--levelTwo {
@@ -1273,21 +1246,21 @@ body {
     }
 
     .burgerMenu--PC .item--levelTwo {
-        width: 330px;
+        width: 16.5rem;
         margin: 0 30px;
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     .burgerMenu--PC .item--levelThree {
-        width: 330px;
+        width: 16.5rem;
         margin: 0 30px;
-        font-size: 18px;
+        font-size: 0.9rem;
     }
 
     .forVisuallyImpaired {
         padding: 18px 20px;
         gap: 12px 25px;
-        font-size: 16px;
+        font-size: 0.8rem;
     }
 
     .forVisuallyImpaired__fontSize,
@@ -1452,15 +1425,13 @@ body {
 
     .showMore {
         margin: 25px 0 0 0;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 0.9rem;
     }
 
     .showMore .waves {
-        width: 21px;
-        margin: 0 0 0 12px;
-        font-size: 15px;
-        line-height: 18px;
+        width: 1.05rem;
+        margin: 0 0 0 0.6rem;
+        font-size: 0.75rem;
     }
 
     .newsAndEvents {
@@ -1484,19 +1455,16 @@ body {
 
     .news__content .item__type {
         margin: 0 25px 0 0;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .news__content .item__date {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .news__content .item__link {
         height: 40px;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .events {
@@ -1526,18 +1494,15 @@ body {
     }
 
     .events__content .date__month {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 0.9rem;
     }
 
     .events__content .date__day {
-        font-size: 36px;
-        line-height: 46px;
+        font-size: 1.8rem;
     }
 
     .events__content .item__link {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .ads__content {
@@ -1561,19 +1526,16 @@ body {
 
     .ads__content .item__date {
         margin: 0 0 10px 0;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .ads__content .item__link {
         margin: 0 0 10px 0;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .ads__content .item__text {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 0.8rem;
     }
 
     .bsuirLife__content {
@@ -1595,6 +1557,10 @@ body {
         width: 50px;
         bottom: 20px;
         left: 20px;
+    }
+
+    .bsuirLife__content .item__text {
+        font-size: 0.8rem;
     }
 
     .footer .container {
@@ -1625,7 +1591,7 @@ body {
     }
 
     .footer__contactUs svg {
-        width: 22px;
+        width: 1.1rem;
     }
 
     .footer__menu {
@@ -1635,8 +1601,7 @@ body {
 
     .footer__menu .list--levelOne {
         width: 47.5%;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 1.1rem;
     }
 
     .footer__menu .list--levelTwo {
@@ -1646,8 +1611,7 @@ body {
     }
 
     .footer__menu .item--levelTwo {
-        font-size: 18px;
-        line-height: 18px;
+        font-size: 0.9rem;
     }
 
     .footer__bottom {
@@ -1659,8 +1623,7 @@ body {
     }
 
     .footer__address {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 0.9rem;
     }
 
     .footer__buildings {
@@ -1668,8 +1631,7 @@ body {
     }
 
     .footer__buildings span {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 0.9rem;
     }
 
     .footer__logo {
@@ -1687,14 +1649,12 @@ body {
     }
 
     .footer__logoText {
-        font-size: 18px;
-        line-height: 20px;
+        font-size: 0.9rem;
     }
 
     .footer__copyright {
         margin: 10px 50px 0 0;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 0.8rem;
     }
 
     .scrollTopButton {
@@ -1709,9 +1669,7 @@ body {
 
 @media screen and (max-width: 767px) {
     :root {
-        --base-font-size: 16px;
-        --medium-font-size: 18px;
-        --big-font-size: 20px;
+        font-size: 16px;
     }
 
     .burger__wrapper {
