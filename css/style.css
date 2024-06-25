@@ -794,10 +794,10 @@ body {
 }
 
 .main .container {
-    padding: 150px 75px 170px;
+    padding: 150px 75px 20px;
 }
 
-.main article:not(:last-child) {
+.main article {
     margin: 0 0 150px 0;
 }
 
@@ -1412,10 +1412,10 @@ a.showMore:hover {
     }
 
     .main .container {
-        padding: 75px 20px 90px;
+        padding: 75px 20px 15px;
     }
 
-    .main article:not(:last-child) {
+    .main article {
         margin: 0 0 75px 0;
     }
 
@@ -1935,10 +1935,10 @@ a.showMore:hover {
     }
 
     .main .container {
-        padding: 50px 15px 60px;
+        padding: 50px 15px 10px;
     }
 
-    .main article:not(:last-child) {
+    .main article {
         margin: 0 0 50px 0;
     }
 
