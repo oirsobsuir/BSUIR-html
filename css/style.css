@@ -918,6 +918,7 @@ a.showMore:hover {
 }
 
 .events__content .item__date {
+    min-width: 2.5rem;
     text-align: center;
 }
 
@@ -1493,6 +1494,10 @@ a.showMore:hover {
         display: flex;
     }
 
+    .events__content .item__date {
+        min-width: 2.6rem;
+    }
+
     .events__content .date__month {
         font-size: 0.9rem;
     }
@@ -1975,6 +1980,10 @@ a.showMore:hover {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, auto);
         gap: 15px;
+    }
+
+    .events__content .item__date {
+        min-width: 2.9rem;
     }
 
     .ads__content {

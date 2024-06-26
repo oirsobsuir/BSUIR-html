@@ -105,6 +105,17 @@ a.person__name {
     height: 675px;
 }
 
+.events {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.events__content {
+    width: 65%;
+    height: unset;
+}
+
 
 
 @media screen and (max-width: 1199px) {
