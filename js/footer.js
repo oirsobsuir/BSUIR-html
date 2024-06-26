@@ -1,10 +1,10 @@
 // Footer menu
 const footerMenu = document.getElementById('footerMenu');
-const levelOneItems = footerMenu.getElementsByClassName('item--levelOne');
-for (let levelOneItem of levelOneItems) {
-    levelOneItem.addEventListener('click', () => {
+const levelOneLists = footerMenu.getElementsByClassName('list--levelOne');
+for (let levelOneList of levelOneLists) {
+    levelOneList.addEventListener('click', () => {
         if (window.innerWidth < 768) {
-            levelOneItem.classList.toggle('item--expanded');
+            levelOneList.classList.toggle('item--expanded');
         }
     })
 }

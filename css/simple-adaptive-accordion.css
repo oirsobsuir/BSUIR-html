@@ -39,16 +39,21 @@
     padding: 0 0 4rem 0;
     font-size: 48px;
     line-height: 62px;
-   /* text-align: center;*/
+    /* text-align: center;*/
     writing-mode: horizontal-tb;
     transform: rotate(0);
 }
 
-.accordionSlider__slide .slide__link {
+.accordionSlider__slide a.slide__link {
     position: absolute;
     left: 25px;
     bottom: 25px;
+    color: #FFFFFF;
     display: none;
+}
+
+.accordionSlider__slide a.slide__link:hover {
+    text-decoration: none;
 }
 
 .accordionSlider__slide.slide--selected .slide__link {
@@ -65,7 +70,7 @@
         border: 5px solid #FFFFFF;
     }
 
-     .slide__text {
+    .slide__text {
         padding: 25px 0 0 0;
         font-size: 21px;
         line-height: 27px;
@@ -97,7 +102,7 @@
         border: 3px solid #FFFFFF;
     }
 
-     .slide__text {
+    .slide__text {
         padding: 0 0 0 15px;
         font-size: 18px;
         line-height: 23px;

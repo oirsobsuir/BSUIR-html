@@ -1,0 +1,42 @@
+:root {
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h1::before {
+    min-width: 2.875rem;
+    max-width: 2.875rem;
+}
+
+@media screen and (max-width: 1199px) {
+    :root {
+        font-size: 26px;
+    }
+
+    h1 {
+        font-size: 2.563rem;
+    }
+
+    h1::before {
+        min-width: 2.947rem;
+        max-width: 2.947rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 2.666rem;
+    }
+
+    h1::before {
+        min-width: 3.065rem;
+        max-width: 3.065rem;
+    }
+}
