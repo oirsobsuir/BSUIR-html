@@ -386,6 +386,10 @@ body {
     color: #E06A7E;
 }
 
+.burgerMenu--Mobile {
+    display: none;
+}
+
 .forVisuallyImpaired {
     padding: 12px 30px;
     display: none;
@@ -635,10 +639,6 @@ body {
 }
 
 .searchFieldMobile {
-    display: none;
-}
-
-.burger__wrapper .header__targetMenu {
     display: none;
 }
 
@@ -1713,6 +1713,10 @@ a.showMore:hover {
 
     .burgerMenu--PC {
         display: none;
+    }
+
+    .burgerMenu--Mobile {
+        display: block;
     }
 
     .forVisuallyImpaired {
