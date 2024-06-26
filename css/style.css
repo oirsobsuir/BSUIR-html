@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'PT-Sans';
     src: url('../fonts/PTSans/PT-Sans_Regular.woff2') format('woff2'),
-        url('../fonts/PTSans/PT-Sans_Regular.woff') format('woff'),
-        url('../fonts/PTSans/PT-Sans_Regular.ttf') format('truetype');
+    url('../fonts/PTSans/PT-Sans_Regular.woff') format('woff'),
+    url('../fonts/PTSans/PT-Sans_Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: 'PT-Sans';
     src: url('../fonts/PTSans/PT-Sans_Bold.woff2') format('woff2'),
-        url('../fonts/PTSans/PT-Sans_Bold.woff') format('woff'),
-        url('../fonts/PTSans/PT-Sans_Bold.ttf') format('truetype');
+    url('../fonts/PTSans/PT-Sans_Bold.woff') format('woff'),
+    url('../fonts/PTSans/PT-Sans_Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
     font-family: 'PT-Sans';
     src: url('../fonts/PTSans/PT-Sans_Italic.woff2') format('woff2'),
-        url('../fonts/PTSans/PT-Sans_Italic.woff') format('woff'),
-        url('../fonts/PTSans/PT-Sans_Italic.ttf') format('truetype');
+    url('../fonts/PTSans/PT-Sans_Italic.woff') format('woff'),
+    url('../fonts/PTSans/PT-Sans_Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
@@ -28,8 +28,8 @@
 @font-face {
     font-family: 'PT-Sans';
     src: url('../fonts/PTSans/PT-sans_Bold_Italic.woff2') format('woff2'),
-        url('../fonts/PTSans/PT-Sans_Bold_italic.woff') format('woff'),
-        url('../fonts/PTSans/PT-Sans_Bold.ttf') format('truetype');
+    url('../fonts/PTSans/PT-Sans_Bold_italic.woff') format('woff'),
+    url('../fonts/PTSans/PT-Sans_Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
@@ -37,8 +37,8 @@
 @font-face {
     font-family: 'MADE Evolve Sans EVO';
     src: url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Thin.woff2') format('woff2'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Thin.woff') format('woff'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Thin.ttf') format('truetype');
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Thin.woff') format('woff'),
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Thin.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
@@ -46,8 +46,8 @@
 @font-face {
     font-family: 'MADE Evolve Sans EVO';
     src: url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Light.woff2') format('woff2'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Light.woff') format('woff'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Light.ttf') format('truetype');
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Light.woff') format('woff'),
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -55,8 +55,8 @@
 @font-face {
     font-family: 'MADE Evolve Sans EVO';
     src: url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO.woff2') format('woff2'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO.woff') format('woff'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO.ttf') format('truetype');
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO.woff') format('woff'),
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -64,8 +64,8 @@
 @font-face {
     font-family: 'MADE Evolve Sans EVO';
     src: url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Medium.woff2') format('woff2'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Medium.woff') format('woff'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Medium.ttf') format('truetype');
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Medium.woff') format('woff'),
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -73,12 +73,11 @@
 @font-face {
     font-family: 'MADE Evolve Sans EVO';
     src: url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Bold.woff2') format('woff2'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Bold.woff') format('woff'),
-        url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Bold.ttf') format('truetype');
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Bold.woff') format('woff'),
+    url('../fonts/MadeEvolveSansEVO/MadeEvolveSansEVO-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
-
 
 
 :root {
@@ -104,8 +103,10 @@ h1:before {
 
 h2 {
     font-size: 2rem;
+    line-height: 1.05;
     font-weight: 700;
     color: #0A3470;
+    margin: 0 0 25px 0;
 }
 
 h3 {
@@ -197,6 +198,16 @@ strong {
     background-color: #930018;
 }
 
+/*test sprite*/
+.test {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+.test {
+    background: url(../img/test-sprite.svg#icon-clock-view) no-repeat;
+}
 
 
 /* body goes here */
@@ -1210,7 +1221,6 @@ a.showMore:hover {
 }
 
 
-
 @media screen and (max-width: 1199px) {
     :root {
         font-size: 20px;
@@ -1670,7 +1680,6 @@ a.showMore:hover {
         bottom: 225px;
     }
 }
-
 
 
 @media screen and (max-width: 767px) {
@@ -2133,7 +2142,6 @@ a.showMore:hover {
         display: none;
     }
 }
-
 
 
 @media screen and (max-width: 600px) {
