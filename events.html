@@ -614,9 +614,402 @@
             <h1>События БГУИР за месяц</h1>
             <div class="events">
                 <div class="events__filter">
-                    <div class="filter__calendar"></div>
+                    <div class="filter__calendar" id="calendar">
+                        <div class="filter__prevMonth" id="filter__prevMonth">«</div>
+                        <div class="filter__nextMonth" id="filter__nextMonth">»</div>
+                        <div class="calendar__container" id="calendar__container" style="transform:translateX(-200%)">
+                            <div class="calendar__item">
+                                <div class="calendar__month">Март 2024</div>
+                                <div class="calendar__days">
+                                    <div class="calendar__day">Пн</div>
+                                    <div class="calendar__day">Вт</div>
+                                    <div class="calendar__day">Ср</div>
+                                    <div class="calendar__day">Чт</div>
+                                    <div class="calendar__day">Пт</div>
+                                    <div class="calendar__day">Сб</div>
+                                    <div class="calendar__day">Вс</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="dates__date date--anotherMonth">26</div>
+                                    <div class="dates__date date--anotherMonth">27</div>
+                                    <div class="dates__date date--anotherMonth">27</div>
+                                    <div class="dates__date date--anotherMonth">29</div>
+                                    <div class="dates__date">1</div>
+                                    <div class="dates__date">2</div>
+                                    <div class="dates__date">3</div>
+                                    <div class="dates__date">4</div>
+                                    <div class="dates__date">5</div>
+                                    <div class="dates__date">6</div>
+                                    <div class="dates__date">7</div>
+                                    <div class="dates__date">8</div>
+                                    <div class="dates__date">9</div>
+                                    <div class="dates__date">10</div>
+                                    <div class="dates__date">11</div>
+                                    <div class="dates__date">12</div>
+                                    <div class="dates__date">13</div>
+                                    <div class="dates__date">14</div>
+                                    <div class="dates__date">15</div>
+                                    <div class="dates__date">16</div>
+                                    <div class="dates__date">17</div>
+                                    <div class="dates__date">18</div>
+                                    <div class="dates__date">19</div>
+                                    <div class="dates__date">20</div>
+                                    <div class="dates__date">21</div>
+                                    <div class="dates__date">22</div>
+                                    <div class="dates__date">23</div>
+                                    <div class="dates__date">24</div>
+                                    <div class="dates__date">25</div>
+                                    <div class="dates__date">26</div>
+                                    <div class="dates__date">27</div>
+                                    <div class="dates__date">28</div>
+                                    <div class="dates__date">29</div>
+                                    <div class="dates__date">30</div>
+                                    <div class="dates__date">31</div>
+                                </div>
+                            </div>
+                            <div class="calendar__item">
+                                <div class="calendar__month">Апрель 2024</div>
+                                <div class="calendar__days">
+                                    <div>Пн</div>
+                                    <div>Вт</div>
+                                    <div>Ср</div>
+                                    <div>Чт</div>
+                                    <div>Пт</div>
+                                    <div>Сб</div>
+                                    <div>Вс</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="dates__date">1</div>
+                                    <div class="dates__date">2</div>
+                                    <div class="dates__date">3</div>
+                                    <div class="dates__date">4</div>
+                                    <div class="dates__date">5</div>
+                                    <div class="dates__date">6</div>
+                                    <div class="dates__date">7</div>
+                                    <div class="dates__date">8</div>
+                                    <div class="dates__date">9</div>
+                                    <div class="dates__date">10</div>
+                                    <div class="dates__date">11</div>
+                                    <div class="dates__date">12</div>
+                                    <div class="dates__date">13</div>
+                                    <div class="dates__date">14</div>
+                                    <div class="dates__date">15</div>
+                                    <div class="dates__date">16</div>
+                                    <div class="dates__date">17</div>
+                                    <div class="dates__date">18</div>
+                                    <div class="dates__date">19</div>
+                                    <div class="dates__date">20</div>
+                                    <div class="dates__date">21</div>
+                                    <div class="dates__date">22</div>
+                                    <div class="dates__date">23</div>
+                                    <div class="dates__date">24</div>
+                                    <div class="dates__date">25</div>
+                                    <div class="dates__date">26</div>
+                                    <div class="dates__date">27</div>
+                                    <div class="dates__date">28</div>
+                                    <div class="dates__date">29</div>
+                                    <div class="dates__date">30</div>
+                                    <div class="dates__date date--anotherMonth">1</div>
+                                    <div class="dates__date date--anotherMonth">2</div>
+                                    <div class="dates__date date--anotherMonth">3</div>
+                                    <div class="dates__date date--anotherMonth">4</div>
+                                    <div class="dates__date date--anotherMonth">5</div>
+                                </div>
+                            </div>
+                            <div class="calendar__item">
+                                <div class="calendar__month">Май 2024</div>
+                                <div class="calendar__days">
+                                    <div>Пн</div>
+                                    <div>Вт</div>
+                                    <div>Ср</div>
+                                    <div>Чт</div>
+                                    <div>Пт</div>
+                                    <div>Сб</div>
+                                    <div>Вс</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="dates__date date--anotherMonth">29</div>
+                                    <div class="dates__date date--anotherMonth">30</div>
+                                    <div class="dates__date date--passed">1</div>
+                                    <div class="dates__date date--passed">2</div>
+                                    <div class="dates__date date--passed">3</div>
+                                    <div class="dates__date date--passed">4</div>
+                                    <div class="dates__date date--passed">5</div>
+                                    <div class="dates__date date--passed">6</div>
+                                    <div class="dates__date date--passed">7</div>
+                                    <div class="dates__date date--passed date--notification">8</div>
+                                    <div class="dates__date">9</div>
+                                    <div class="dates__date">10</div>
+                                    <div class="dates__date date--notification">11</div>
+                                    <div class="dates__date">12</div>
+                                    <div class="dates__date">13</div>
+                                    <div class="dates__date">14</div>
+                                    <div class="dates__date">15</div>
+                                    <div class="dates__date date--current">16</div>
+                                    <div class="dates__date">17</div>
+                                    <div class="dates__date">18</div>
+                                    <div class="dates__date">19</div>
+                                    <div class="dates__date">20</div>
+                                    <div class="dates__date date--notification">21</div>
+                                    <div class="dates__date date--notification date--selected">22</div>
+                                    <div class="dates__date">23</div>
+                                    <div class="dates__date">24</div>
+                                    <div class="dates__date">25</div>
+                                    <div class="dates__date">26</div>
+                                    <div class="dates__date">27</div>
+                                    <div class="dates__date">28</div>
+                                    <div class="dates__date">29</div>
+                                    <div class="dates__date date--notification">30</div>
+                                    <div class="dates__date">31</div>
+                                    <div class="dates__date date--anotherMonth">1</div>
+                                    <div class="dates__date date--anotherMonth">2</div>
+                                </div>
+                            </div>
+                            <div class="calendar__item">
+                                <div class="calendar__month">Июнь 2024</div>
+                                <div class="calendar__days">
+                                    <div>Пн</div>
+                                    <div>Вт</div>
+                                    <div>Ср</div>
+                                    <div>Чт</div>
+                                    <div>Пт</div>
+                                    <div>Сб</div>
+                                    <div>Вс</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="dates__date date--anotherMonth">27</div>
+                                    <div class="dates__date date--anotherMonth">28</div>
+                                    <div class="dates__date date--anotherMonth">29</div>
+                                    <div class="dates__date date--anotherMonth">30</div>
+                                    <div class="dates__date date--anotherMonth">31</div>
+                                    <div class="dates__date">1</div>
+                                    <div class="dates__date">2</div>
+                                    <div class="dates__date">3</div>
+                                    <div class="dates__date">4</div>
+                                    <div class="dates__date">5</div>
+                                    <div class="dates__date">6</div>
+                                    <div class="dates__date">7</div>
+                                    <div class="dates__date">8</div>
+                                    <div class="dates__date">9</div>
+                                    <div class="dates__date">10</div>
+                                    <div class="dates__date">11</div>
+                                    <div class="dates__date">12</div>
+                                    <div class="dates__date">13</div>
+                                    <div class="dates__date">14</div>
+                                    <div class="dates__date">15</div>
+                                    <div class="dates__date">16</div>
+                                    <div class="dates__date">17</div>
+                                    <div class="dates__date">18</div>
+                                    <div class="dates__date">19</div>
+                                    <div class="dates__date">20</div>
+                                    <div class="dates__date">21</div>
+                                    <div class="dates__date">22</div>
+                                    <div class="dates__date">23</div>
+                                    <div class="dates__date">24</div>
+                                    <div class="dates__date">25</div>
+                                    <div class="dates__date">26</div>
+                                    <div class="dates__date">27</div>
+                                    <div class="dates__date">28</div>
+                                    <div class="dates__date">29</div>
+                                    <div class="dates__date">30</div>
+                                </div>
+                            </div>
+                            <div class="calendar__item">
+                                <div class="calendar__month">Июль 2024</div>
+                                <div class="calendar__days">
+                                    <div>Пн</div>
+                                    <div>Вт</div>
+                                    <div>Ср</div>
+                                    <div>Чт</div>
+                                    <div>Пт</div>
+                                    <div>Сб</div>
+                                    <div>Вс</div>
+                                </div>
+                                <div class="calendar__dates">
+                                    <div class="dates__date">1</div>
+                                    <div class="dates__date">2</div>
+                                    <div class="dates__date">3</div>
+                                    <div class="dates__date">4</div>
+                                    <div class="dates__date">5</div>
+                                    <div class="dates__date">6</div>
+                                    <div class="dates__date">7</div>
+                                    <div class="dates__date">8</div>
+                                    <div class="dates__date">9</div>
+                                    <div class="dates__date">10</div>
+                                    <div class="dates__date">11</div>
+                                    <div class="dates__date">12</div>
+                                    <div class="dates__date">13</div>
+                                    <div class="dates__date">14</div>
+                                    <div class="dates__date">15</div>
+                                    <div class="dates__date">16</div>
+                                    <div class="dates__date">17</div>
+                                    <div class="dates__date">18</div>
+                                    <div class="dates__date">19</div>
+                                    <div class="dates__date">20</div>
+                                    <div class="dates__date">21</div>
+                                    <div class="dates__date">22</div>
+                                    <div class="dates__date">23</div>
+                                    <div class="dates__date">24</div>
+                                    <div class="dates__date">25</div>
+                                    <div class="dates__date">26</div>
+                                    <div class="dates__date">27</div>
+                                    <div class="dates__date">28</div>
+                                    <div class="dates__date">29</div>
+                                    <div class="dates__date">30</div>
+                                    <div class="dates__date">31</div>
+                                    <div class="dates__date date--anotherMonth">1</div>
+                                    <div class="dates__date date--anotherMonth">2</div>
+                                    <div class="dates__date date--anotherMonth">3</div>
+                                    <div class="dates__date date--anotherMonth">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .filter__calendar {
+                            width: 100%;
+                            position: sticky;
+                            top: 150px;
+                            overflow: hidden;
+                        }
+
+                        .filter__prevMonth,
+                        .filter__nextMonth {
+                            position: absolute;
+                            z-index: 10;
+                            top: 0;
+                            height: 46px;
+                            width: 46px;
+                            display: flex;
+                            justify-content: center;
+                            cursor: pointer;
+                            user-select: none;
+                        }
+
+                        .filter__prevMonth:hover,
+                        .filter__nextMonth:hover {
+                            background: #eee;
+                        }
+
+                        .filter__prevMonth {
+                            left: 0;
+                        }
+
+                        .filter__nextMonth {
+                            right: 0;
+                        }
+
+                        .calendar__container {
+                            height: 100%;
+                            display: flex;
+                        }
+
+                        .calendar__item {
+                            height: 100%;
+                            min-width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .calendar__month {
+                            text-align: center;
+                            height: 46px;
+                            font-size: 40px;
+                            line-height: 46px;
+                            font-weight: 700;
+                            color: #0A3470;
+                        }
+
+                        .calendar__days {
+                            display: grid;
+                            grid-template-columns: repeat(7, 1fr);
+                        }
+
+                        .calendar__day {
+                            padding: 20px 0;
+                            font-weight: 700;
+                            text-align: center;
+                        }
+
+                        .calendar__dates {
+                            display: grid;
+                            grid-template-columns: repeat(7, 1fr);
+                            grid-template-rows: 1fr;
+                            border-top: 1px solid #D9D9D9;
+                            border-left: 1px solid #D9D9D9;
+                        }
+
+                        .dates__date {
+                            height: 90px;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #FFFFFF;
+                            border-right: 1px solid #D9D9D9;
+                            border-bottom: 1px solid #D9D9D9;
+                        }
+
+                        .date--anotherMonth {
+                            background-color: #F2F3F7;
+                            font-weight: 700;
+                            color: #A8A8A8;
+                        }
+
+                        .date--passed {
+                            font-weight: 700;
+                            color: #979797;
+                        }
+
+                        .date--notification::after {
+                            content: "";
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                            height: 14px;
+                            width: 14px;
+                            border-radius: 50%;
+                            background-color: #013767;
+                        }
+
+                        .date--current {
+                            background-color: #FFE5E3;
+                        }
+
+                        .date--selected {
+                            font-weight: 700;
+                            border: 2px solid #013767;
+                        }
+
+                        .dates__date:hover {
+                            z-index: 1000;
+                            border: none;
+                            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 44%);
+                        }
+                    </style>
+                    <script>
+                        const prevMonth_btn = document.getElementById("filter__prevMonth");
+                        const nextMonth_btn = document.getElementById("filter__nextMonth");
+                        const container = document.getElementById("calendar__container");
+                        const monthes = document.querySelectorAll(".calendar__item");
+
+                        function getCurCalendarPosition() {
+                            return +container.style.transform.split("(")[1].split("%")[0];
+                        }
+
+                        prevMonth_btn.addEventListener('click', () => {
+                            if (getCurCalendarPosition() < 0) {
+                                container.style.transform = `translateX(${getCurCalendarPosition() + 100}%)`;
+                            }
+                        })
+
+                        nextMonth_btn.addEventListener('click', () => {
+                            if (getCurCalendarPosition() > -monthes.length * 100 + 100) {
+                                container.style.transform = `translateX(${getCurCalendarPosition() - 100}%)`;
+                            }
+                        })
+                    </script>
                     <div class="filter__rubrics"></div>
-                    <div class="filter__buttons"></div>
                 </div>
                 <div class="events__content">
                     <div class="content__item">

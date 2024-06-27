@@ -112,7 +112,7 @@ a.person__name {
 }
 
 .events__content {
-    width: 65%;
+    width: 58%;
     height: unset;
 }
 
@@ -214,4 +214,9 @@ a.person__name {
         width: 100%;
         flex: unset;
     }
+}
+
+.events__filter {
+    width: 42%;
+    padding: 0 85px 0 0;
 }
