@@ -112,19 +112,23 @@ a.person__name {
 }
 
 .events__content {
-    width: 58%;
     height: unset;
 }
 
-.filter__calendar {
+.events__calendarWrapper {
+    width: 42%;
+    padding: 0 85px 0 0;
+}
+
+.events__calendar {
     width: 100%;
     position: sticky;
-    top: 150px;
+    top: 130px;
     overflow: hidden;
 }
 
-.filter__prevMonth,
-.filter__nextMonth {
+.calendar__prevMonth,
+.calendar__nextMonth {
     position: absolute;
     z-index: 10;
     top: 0;
@@ -146,12 +150,12 @@ a.person__name {
     stroke: #000000;
 }
 
-.filter__prevMonth {
+.calendar__prevMonth {
     left: 0;
     transform: rotate(90deg);
 }
 
-.filter__nextMonth {
+.calendar__nextMonth {
     right: 0;
     transform: rotate(-90deg);
 }
@@ -245,6 +249,32 @@ a.person__name {
     z-index: 5;
     border: none;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 44%);
+}
+
+.events__contentWrapper {
+    width: 58%;
+}
+
+.events__rubrics {
+    margin: 30px 0;
+    position: sticky;
+    top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 30px #FFFFFF;
+}
+
+.rubrics__rubric {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rubric__checkbox {
+    height: 1.15rem;
+    width: 1.15rem;
 }
 
 
@@ -345,9 +375,4 @@ a.person__name {
         width: 100%;
         flex: unset;
     }
-}
-
-.events__filter {
-    width: 42%;
-    padding: 0 85px 0 0;
 }
