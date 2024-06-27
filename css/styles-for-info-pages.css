@@ -135,6 +135,7 @@ a.person__name {
     align-items: center;
     cursor: pointer;
     user-select: none;
+    background-color: #FFFFFF;
 }
 
 .svg--arrowLeft,
@@ -143,7 +144,6 @@ a.person__name {
     height: 10px;
     display: block;
     stroke: #000000;
-    transition: transform 150ms;
 }
 
 .filter__prevMonth {
