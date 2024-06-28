@@ -37,7 +37,7 @@ for (let nextMontsBtn of nextMontsBtnArr) {
 
 
 
-// ...
+const datesNotifArr = document.getElementsByClassName('dates__date--notification');
 
 
 
