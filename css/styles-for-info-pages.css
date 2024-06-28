@@ -105,6 +105,19 @@ a.person__name {
     height: 675px;
 }
 
+.rubrics {
+    width: 58%;
+    margin: 0 0 30px auto;
+    padding: 0 0 0 160px;
+    position: sticky;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2.5rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 -15px 5px 40px #FFFFFF;
+}
+
 .events {
     width: 100%;
     display: flex;
@@ -112,6 +125,7 @@ a.person__name {
 }
 
 .events__content {
+    width: 58%;
     height: unset;
 }
 
@@ -124,14 +138,16 @@ a.person__name {
     width: 100%;
     position: sticky;
     top: 150px;
-    overflow: hidden;
+}
+
+.calendar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .calendar__prevMonth,
 .calendar__nextMonth {
-    position: absolute;
-    z-index: 10;
-    top: 0;
     height: 46px;
     width: 46px;
     display: flex;
@@ -162,31 +178,18 @@ a.person__name {
     transform: rotate(90deg);
 }
 
-.calendar__nextMonth {
-    right: 0;
-    transform: rotate(-90deg);
-}
-
-.calendar__container {
-    height: 100%;
-    display: flex;
-    transition: transform 300ms;
-}
-
-.calendar__item {
-    height: 100%;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.calendar__month {
+.calendar__curMonth {
     text-align: center;
     height: 46px;
     font-size: 40px;
     line-height: 46px;
     font-weight: 700;
     color: #0A3470;
+}
+
+.calendar__nextMonth {
+    right: 0;
+    transform: rotate(-90deg);
 }
 
 .calendar__days {
@@ -258,21 +261,6 @@ a.person__name {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 44%);
 }
 
-.events__contentWrapper {
-    width: 58%;
-}
-
-.events__rubrics {
-    margin: 0 0 30px 0;
-    position: sticky;
-    top: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 2.5rem;
-    background-color: #FFFFFF;
-    box-shadow: 0 -15px 5px 40px #FFFFFF;
-}
-
 .rubrics__rubric {
     height: 46px;
     display: flex;
@@ -299,7 +287,7 @@ a.person__name {
 }
 
 .events__content .item__status svg {
-    height: 100%;
+    height: 1rem;
     width: 100%;
 }
 

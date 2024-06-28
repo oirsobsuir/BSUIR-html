@@ -1,6 +1,54 @@
-const rubricSelectorContainer = document.getElementById("rubrics");
-const rubricSelectorArr = document.querySelectorAll(".rubrics__rubric input[type='checkbox']");
-const rubricItemArr = document.querySelectorAll(".events__content .content__item");
+const eventPageArr = document.getElementsByClassName('events');
+const prevMontsBtnArr = document.getElementsByClassName('calendar__prevMonth');
+const nextMontsBtnArr = document.getElementsByClassName('calendar__nextMonth');
+
+for (let prevMontsBtn of prevMontsBtnArr) {
+    prevMontsBtn.addEventListener('click', () => {
+        for (let eventPage of eventPageArr) {
+            if (+prevMontsBtn.getAttribute('data-open').slice(-2) > 0) {
+                if (eventPage.getAttribute('id') == prevMontsBtn.getAttribute('data-open')) {
+                    eventPage.classList.remove('d-none');
+                } else {
+                    eventPage.classList.add('d-none');
+                }
+            }
+        }
+    })
+}
+
+for (let nextMontsBtn of nextMontsBtnArr) {
+    nextMontsBtn.addEventListener('click', () => {
+        for (let eventPage of eventPageArr) {
+            if (+nextMontsBtn.getAttribute('data-open').slice(-2) > 0) {
+                if (eventPage.getAttribute('id') == nextMontsBtn.getAttribute('data-open')) {
+                    eventPage.classList.remove('d-none');
+                } else {
+                    eventPage.classList.add('d-none');
+                }
+            }
+        }
+    })
+}
+
+
+
+//--calendar-scroll-script--------------------------------------------------------------------------------end-
+//--calendar-dates-script-------------------------------------------------------------------------------start-
+
+
+
+// ...
+
+
+
+//--calendar-dates-script---------------------------------------------------------------------------------end-
+//--filter-script---------------------------------------------------------------------------------------start-
+
+
+
+const rubricSelectorContainer = document.getElementById('rubrics');
+const rubricSelectorArr = document.querySelectorAll('.rubrics__rubric input[type="checkbox"]');
+const rubricItemArr = document.querySelectorAll('.events__content .content__item');
 
 // Объект в котором хранятся значения чекбоксов
 let rubricStatusObj = {
@@ -12,7 +60,7 @@ let rubricStatusObj = {
 
 // Функция выполняющая фильтр списка событий по рубрикам
 function filterRubrics() {
-    rubricItemArr.forEach(rubricItem => {
+    for (let rubricItem of rubricItemArr) {
         if (rubricStatusObj[rubricItem.getAttribute('data-rubric')]) {
             rubricItem.classList.remove('d-none');
         } else {
@@ -22,13 +70,17 @@ function filterRubrics() {
         if (Object.values(rubricStatusObj).every(value => value === false)) {
             rubricItem.classList.remove('d-none');
         }
-    })
+    }
 }
 
 // Ивент записывающий значения чекбоксов в объект с последующим вызовом фильрации списка событий по рубрикам
-rubricSelectorArr.forEach(rubricSelector => {
+for (let rubricSelector of rubricSelectorArr) {
     rubricSelector.addEventListener('change', () => {
         rubricStatusObj[rubricSelector.parentElement.getAttribute('data-check')] = rubricSelector.checked;
         filterRubrics();
     })
-})
+}
+
+
+
+//--filter-script-----------------------------------------------------------------------------------------end-
