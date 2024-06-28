@@ -10,6 +10,3 @@ document.addEventListener('click', (e) => {
         searchFieldPC.classList.add('d-none');
     }
 });
-
-searchFieldMobileActivator.style.background = "red";
-searchFieldPC.style.background = "blue";
